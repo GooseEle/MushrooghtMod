@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StS-MushrooghtModBase-master:jar">
+    <output-path>$USER_HOME$/..special/artifacts/StS_MushrooghtModBase_master_jar</output-path>
+    <root id="archive" name="StS-MushrooghtModBase-master.jar">
+      <element id="module-output" name="theMushrooghtArtifact" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../workshop/content/646570/1605060445/ModTheSpire.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../desktop-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../workshop/content/646570/1609158507/StSLib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../workshop/content/646570/1605833019/BaseMod.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

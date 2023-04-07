@@ -1,0 +1,54 @@
+[
+  {
+    "PROPER_NAME": "Mycelium",
+    "NAMES": [
+      "Mycelium",
+      "mycelium",
+      "myceliums"
+    ],
+    "DESCRIPTION": "When receiving #yAttack damage, deals damage back and lowers by 2 times."
+  },
+  {
+    "PROPER_NAME": "Mushroom Growth",
+    "NAMES": [
+      "Mushroom Growth",
+      "mushroom_growth",
+      "mushgrowth",
+      "mushygrowthy"
+    ],
+    "DESCRIPTION": "Add a Mushroom Growth into your hand. It Ethereal."
+  },
+  {
+    "PROPER_NAME": "Unsafe Block",
+    "NAMES": [
+      "Unsafe",
+      "unsafe"
+    ],
+    "DESCRIPTION": "Convert your #yBlock into #yUnsafe #yBlock. #yBlock is not removed at the start of your next turn. Gain #b50% less #yBlock from cards."
+  },
+  {
+    "PROPER_NAME": "Spore",
+    "NAMES": [
+      "Spore",
+      "spore"
+    ],
+    "DESCRIPTION": "Spore creatures take #b10% per stack more damage from Attacks."
+  },
+  {
+    "PROPER_NAME": "Weakness Spore",
+    "NAMES": [
+      "Weakness Spore",
+      "weakness_spore"
+    ],
+    "DESCRIPTION": "Weakness Spore creatures deal #b10% per stack less damage with Attacks. No more than #b55%."
+  },
+  {
+    "ID": "idontknowwhatitisijustcopythisfromhermit",
+    "PROPER_NAME": "IDontKnowWhatItIsIJustCopyThisFromHermit",
+    "NAMES": [
+      "idkandspecialforthiskeywordcantbeanywhere",
+    ],
+    "DESCRIPTION": "hehe, goose do ctrl c ctrl v"
+  }
+
+]

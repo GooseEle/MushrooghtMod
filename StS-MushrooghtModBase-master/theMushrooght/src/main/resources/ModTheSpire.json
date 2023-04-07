@@ -1,0 +1,12 @@
+{
+  "modid": "theMushrooghtArtifact",
+  "name": "Mushrooght Mod",
+  "author_list": ["GooseEle"],
+  "credits": "Ruin has come to our family.",
+  "description": "I don't know what to put here, so keep the recipe for dumplings, and yes, it will be in Russian and in English with the help of google translator. \nберём много пельменей.\nобмазываем каждый из них отдельно в масле.\nраскладываем их на протвень.\nблагодаря маслу каждого пельменя будет под собой своя лужа масла и они будут меньше пригорать.\nвыпекаем при 250 градусах 15-20 минут, смотрим по появлению золотистой корочки на пельмене, если она появилась, то они готовы. \nможно готовить чуть меньше или чуть дольше, смотря как вам нравится.\nя ем пельмени и подобные штуки (кроме варёных пельменей с бульоном) с соевым соусом, так что для меня нету недостатка соли, а вы еште так как вам нравится. \nвсё. да. я просто написал как запекать пельмени, незачто. \ntake a lot of dumplings.\ncoat each of them separately in oil.\nlay them out on a baking sheet.\nthanks to the oil of each dumpling, there will be a puddle of oil under it and they will burn less.\nbake at 250 degrees for 15-20 minutes, look at the appearance of a golden crust on the dumplings, if it appears, then they are ready.\nYou can cook a little less or a little longer, depending on how you like.\nI eat dumplings and similar things (except boiled dumplings with broth) with soy sauce, so there is no lack of salt for me, and you eat as you like.\neverything. Yes. I just wrote how to bake dumplings, no matter what.",
+  "version": "0.0.1",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
+  "dependencies": ["basemod", "stslib"],
+  "update_json": ""
+}

@@ -1,0 +1,56 @@
+{
+  "theMushrooght:i1OvergrownMushroomRelic": {
+    "NAME": "Overgrown Mushroom",
+    "FLAVOR": "This mushroom has been on you ever since you woke up... And it seems to have gone straight into your brain.",
+    "DESCRIPTIONS": [
+      "At the end turn, you lose 2 #yWeak, #yFrail and #yVulnerable."
+    ]
+  },
+  "theMushrooght:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theMushrooght:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theMushrooght:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "theMushrooght:i2FightsForDummiesRelic": {
+    "NAME": "Fights for Dummies",
+    "FLAVOR": "An old book that ****** *e*d to you before *o*** ** ***. Ah, the good old days.",
+    "DESCRIPTIONS": [
+      "If you play only Defend and cards containing \"Strike\" during your turn, gain an additional ",
+      "[E] next turn."
+    ]
+  },
+  "theMushrooght:i3FertileCorpseRelic": {
+    "NAME": "Fertile Corpse",
+    "FLAVOR": "It would be possible to make not bad stuffed rat. If it wasn't for mushrooms.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add Mushroom Growth into your hand."
+    ]
+  },
+  "theMushrooght:i11GigaparasiteRelic": {
+    "NAME": "Gigaparasite",
+    "FLAVOR": "This parasite is TOO big. Where did the merchant get it?",
+    "DESCRIPTIONS": [
+      "Up Bizarre Parasite heal to #b11 each combat."
+    ]
+  }
+}

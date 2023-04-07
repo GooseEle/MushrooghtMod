@@ -1,0 +1,361 @@
+{
+  "theMushrooght:i1Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theMushrooght:i2Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "theMushrooght:i3DrainPower": {
+    "NAME": "Drain Power",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL ALL enemies lose !theMushrooght:SecondMagic! Strength this turn. NL Exhaust."
+  },
+  "theMushrooght:i4Spore": {
+    "NAME": "Spore",
+    "DESCRIPTION": "Gain !M! themushrooght:Mycelium. NL themushrooght:Mushroom_Growth."
+  },
+  "theMushrooght:i5KeepInLine": {
+    "NAME": "Keep in Line",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! themushrooght:Mycelium."
+  },
+  "theMushrooght:i6MushroomGrowth1": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Gain !B! Block. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i7SporeCloud": {
+    "NAME": "Spore Cloud",
+    "DESCRIPTION": "Apply !M! themushrooght:Spore to ALL enemies."
+  },
+  "theMushrooght:i8Propagation": {
+    "NAME": "Propagation",
+    "DESCRIPTION": "Apply !M! themushrooght:Weakness_Spore to ALL enemies."
+  },
+  "theMushrooght:i9Assimilation": {
+    "NAME": "Assimilation",
+    "DESCRIPTION": "Apply !theMushrooght:SecondMagic! themushrooght:Weakness_Spore and !M! themushrooght:Spore to ALL enemies. NL Exhaust."
+  },
+  "theMushrooght:i10Consumedmind": {
+    "NAME": "Consumedmind",
+    "DESCRIPTION": "Ethereal. NL Gain !M! themushrooght:Unsafe Block."
+  },
+  "theMushrooght:i11Provocation": {
+    "NAME": "Provocation",
+    "DESCRIPTION": "Apply 2 temporary Strength to ALL enemies. NL Gain !M! themushrooght:Unsafe Block."
+  },
+  "theMushrooght:i12Allelopathy": {
+    "NAME": "Allelopathy",
+    "DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Gain [E] [E]. NL Exhaust."
+  },
+  "theMushrooght:i13TrueFunk": {
+    "NAME": "True Funk",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust 2 cards at random.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust up to 2 cards in your hand."
+  },
+  "theMushrooght:i14OldTricks": {
+    "NAME": "Old Tricks",
+    "DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain !M! Strength and !M! Dexterity. NL At the end of this turn, lose !M! Strength and !M! Dexterity."
+  },
+  "theMushrooght:i15Psilocin": {
+    "NAME": "Psilocin",
+    "DESCRIPTION": "Apply !theMushrooght:SecondMagic! Poison."
+  },
+  "theMushrooght:i16Reflexion": {
+    "NAME": "Reflexion",
+    "DESCRIPTION": "Draw !theMushrooght:SecondMagic! card. NL Gain !M! themushrooght:Unsafe Block.",
+    "UPGRADE_DESCRIPTION": "Draw !theMushrooght:SecondMagic! cards. NL Gain !M! themushrooght:Unsafe Block."
+  },
+  "theMushrooght:i17Woe": {
+    "NAME": "Woe",
+    "DESCRIPTION": "Add a random Uncommon card into your hand. NL It costs 0 this turn. NL Exhaust."
+  },
+  "theMushrooght:i18BadInstincts": {
+    "NAME": "Bad Instincts",
+    "DESCRIPTION": "Innate. NL Gain !M! themushrooght:Unsafe Block. NL Gain 3 themushrooght:Mycelium. NL Exhaust."
+  },
+  "theMushrooght:i19Inviolable": {
+    "NAME": "Inviolable",
+    "DESCRIPTION": "Innate. NL Gain !M! themushrooght:Mycelium. NL Exhaust."
+  },
+  "theMushrooght:i20MushroomGrowth2": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Gain !M! themushrooght:Unsafe Block. NL The next Attack you play costs 0. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i21MushroomGrowth3": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Draw !M! cards. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i22MushroomGrowth4": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Apply !M! Poison to a random enemy 4 times. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i23MushroomGrowth5": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Apply !M! Poison and 1 Vulnerable to ALL enemies. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i24Curselyst": {
+    "NAME": "Curselyst",
+    "DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust 2 cards at random. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust up to 2 cards in your hand. NL Exhaust."
+  },
+  "theMushrooght:i25Chytridiomycota": {
+    "NAME": "Chytridiomycota",
+    "DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Gain !B! Block."
+  },
+  "theMushrooght:i26Endomycorrhiza": {
+    "NAME": "Endomycorrhiza",
+    "DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain [E] [E]. NL Exhaust."
+
+  },
+  "theMushrooght:i27Ectomycorrhiza": {
+    "NAME": "Ectomycorrhiza",
+    "DESCRIPTION": "Gain !B! Block. NL Upgrade a 2 cards in your hand for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Upgrade all cards in your hand for the rest of combat."
+  },
+  "theMushrooght:i28Velum": {
+    "NAME": "Velum",
+    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust."
+  },
+  "theMushrooght:i29Rhizoctonia": {
+    "NAME": "Rhizoctonia",
+    "DESCRIPTION": "Exhaust all non-Power cards in your hand. NL Gain [E] and heal 1 HP for each card Exhaust."
+  },
+  "theMushrooght:i30Sclerotium": {
+    "NAME": "Sclerotium",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Artifact. NL Exhaust."
+  },
+  "theMushrooght:i31MonotropoidMycorrhiza": {
+    "NAME": "Monotropoid Mycorrhiza",
+    "DESCRIPTION": "Unplayable. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand, gain [E] and Exhaust."
+  },
+  "theMushrooght:i32FairyRing": {
+    "NAME": "Fairy Ring",
+    "DESCRIPTION": "Ethereal. NL Obtain a random potion. NL Apply !theMushrooght:SecondMagic! Poison to ALL enemies. NL Exhaust."
+  },
+  "theMushrooght:i33MushroomGrowth6": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Gain !M! themushrooght:Mycelium. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i34MushroomGrowth7": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Gain [E]. NL Draw !M! card. NL themushrooght:Mushroom_Growth. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E]. NL Draw !M! cards. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i35Forcing": {
+    "NAME": "Forcing",
+    "DESCRIPTION": "Unplayable. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust."
+  },
+  "theMushrooght:i35Stroma": {
+    "NAME": "Stroma",
+    "DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw !M! cards. NL Exhaust."
+  },
+  "theMushrooght:i37Commensalism": {
+    "NAME": "Commensalism",
+    "DESCRIPTION": "This turn, your next card is played twice."
+  },
+  "theMushrooght:i38FenceOff": {
+    "NAME": "Fence Off",
+    "DESCRIPTION": "Unplayable. NL When you draw this card, Gain !M! themushrooght:Mycelium and draw 1 card."
+  },
+  "theMushrooght:i39Adapting": {
+    "NAME": "Adapting",
+    "DESCRIPTION": "Unplayable. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand."
+  },
+  "theMushrooght:i40Calmness": {
+    "NAME": "Calmness",
+    "DESCRIPTION": "Unplayable. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn"
+  },
+  "theMushrooght:i41Haustoria": {
+    "NAME": "Haustoria",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theMushrooght:i42PowderyMildew": {
+    "NAME": "Powdery Mildew",
+    "DESCRIPTION": "Deal !D! damage twice. NL Increase the damage of ALL Powdery Mildew cards by 1 this combat."
+  },
+  "theMushrooght:i43MushroomGrowth8": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i44MushroomGrowth9": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, gain [E]. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i45MushroomGrowth10": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL themushrooght:Mushroom_Growth. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i46MycelialCord": {
+    "NAME": "Mycelial Cord",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theMushrooght:i47Rhizomorph": {
+    "NAME": "Rhizomorph",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theMushrooght:i48PurestIre": {
+    "NAME": "Purest Ire",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! themushrooght:Mycelium. NL Add a copy of this card to your discard and draw pile. NL Exhaust."
+  },
+  "theMushrooght:i49LearnRussianStrike": {
+    "NAME": "Learn Russian Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Deals an additional 3 damage for ALL of your cards containing \"Strike\"."
+  },
+  "theMushrooght:i50FightToTheDeath": {
+    "NAME": "Fight to the Death",
+    "DESCRIPTION": "Can only be played if every card in your hand is an Attack. NL Deal 1 more damage for each time you lose HP in combat. NL Deal !D! damage."
+  },
+  "theMushrooght:i51WellLaidStrike": {
+    "NAME": "Well-Laid Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Put the next card you play this turn on top of your draw pile. "
+  },
+  "theMushrooght:i52Chemotropism": {
+    "NAME": "Chemotropism",
+    "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damage. NL Apply !theMushrooght:SecondMagic! Poison."
+  },
+  "theMushrooght:i53Appressorium": {
+    "NAME": "Appressorium",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !theMushrooght:SecondMagic! themushrooght:Weakness_Spore and !M! themushrooght:Spore."
+  },
+  "theMushrooght:i54RustyStrike": {
+    "NAME": "Rusty Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !theMushrooght:SecondMagic! Poison."
+  },
+  "theMushrooght:i55MushroomGrowth11": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you attack this enemy, gain !M! Block. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i56MushroomGrowth12": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Permanently increase this card's Block by 3. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i57MushroomGrowth13": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i58MushroomGrowth14": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage for each Attack in your hand. NL themushrooght:Mushroom_Growth. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have ",
+      " Attack).",
+      " Attacks)."
+    ]
+  },
+  "theMushrooght:i59Amensalism": {
+    "NAME": "Amensalism",
+    "DESCRIPTION": "Deal !D! damage. NL Strike."
+  },
+  "theMushrooght:i60Allelopathy": {
+    "NAME": "Allelopathy",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 2 Frail."
+  },
+  "theMushrooght:i61Inquiline": {
+    "NAME": "Inquiline",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy lose 1 Plated Armor and Metallicize. Apply 1 Vulnerable."
+  },
+  "theMushrooght:i62Compost": {
+    "NAME": "Compost",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, gain [E] [E] [E]."
+  },
+  "theMushrooght:i63Massacre": {
+    "NAME": "Massacre",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage."
+  },
+  "theMushrooght:i64StrikeWithRecoil": {
+    "NAME": "Strike with Recoil",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Bizarre *Parasite into your discard pile."
+  },
+  "theMushrooght:i65Hypha": {
+    "NAME": "Hypha",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theMushrooght:i66FlashOfRust": {
+    "NAME": "Flash of Rust",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E]."
+  },
+  "theMushrooght:i67MushroomGrowth15": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL Gain themushrooght:Mycelium equal to unblocked damage dealt. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i68MushroomGrowth16": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Deal !D! damage. NL If the last card played this combat was a Power, gain !M! Strength. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i69Neutralism": {
+    "NAME": "Neutralism",
+    "DESCRIPTION": "Gain 1 Strength, Dexterity and [E]. NL Apply 2 themushrooght:Weakness_Spore to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Strength, Dexterity, [E] and 3 themushrooght:Mycelium. NL Apply 2 themushrooght:Weakness_Spore to ALL enemies."
+  },
+  "theMushrooght:i70Protocooperation": {
+    "NAME": "Protocooperation",
+    "DESCRIPTION": "Gain !M! Strength. NL Apply !M! Dexterity to ALL enemies."
+  },
+  "theMushrooght:i71MushroomGrowth17": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Apply 1 themushrooght:Spore to ALL enemies. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i72MushroomGrowth18": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "At the start of your turn, apply !M! Poison to ALL enemies. NL Apply 3 themushrooght:Spore to ALL enemies. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i73Competition": {
+    "NAME": "Competition",
+    "DESCRIPTION": "Gain !M! Dexterity. NL Apply 1 Strength and !theMushrooght:SecondMagic! themushrooght:Weakness_Spore to ALL enemies."
+  },
+  "theMushrooght:i74Homostasis": {
+    "NAME": "Homostasis",
+    "DESCRIPTION": "Heal 6 HP. NL Gain !M! themushrooght:Mycelium. NL Apply 2 themushrooght:Spore to ALL enemies."
+  },
+  "theMushrooght:i75GodForm": {
+    "NAME": "God Form",
+    "DESCRIPTION": "Ethereal. NL At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile."
+  },
+  "theMushrooght:i76PutridHeart": {
+    "NAME": "Putrid Heart",
+    "DESCRIPTION": "At the start of your turn, add 1 *Bizarre *Parasite into your discard pile and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add 1 *Bizarre *Parasite into your discard pile and draw 1 card."
+  },
+  "theMushrooght:i77MushroomGrowth19": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Whenever you apply a Debuff to an enemy, they take !M! damage. NL Apply 3 themushrooght:Spore to ALL enemies. NL themushrooght:Mushroom_Growth. NL Exhaust."
+  },
+  "theMushrooght:i78LunacyEvolve": {
+    "NAME": "Lunacy Evolve",
+    "DESCRIPTION": "Whenever you draw a Status or Curse card, gain !M! themushrooght:Mycelium. NL Apply 1 themushrooght:Weakness_Spore to ALL enemies."
+  },
+  "theMushrooght:i79UtterMastery": {
+    "NAME": "Utter Mastery",
+    "DESCRIPTION": "Whenever you play a card, gain 1 Block and deal 1 damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. Whenever you play a card, gain 1 Block and deal 2 damage to ALL enemies."
+  },
+  "theMushrooght:i80Bogue": {
+    "NAME": "Bogue",
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL At the end of your turn, lose 1 Strength and Dexterity."
+  },
+  "theMushrooght:i81BizarreParasite": {
+    "NAME": "Bizarre Parasite",
+    "DESCRIPTION": "Unplayable. NL If this card is Exhausted, heal 1 HP and draw 1 card."
+  },
+  "theMushrooght:i82Mycoheterotrophy": {
+    "NAME": "Myco-heterotrophy",
+    "DESCRIPTION": "Unplayable. NL At the end of your turn, gain 1 Frail."
+  },
+  "theMushrooght:i83MushroomGrowth20": {
+    "NAME": "Mushroom Growth",
+    "DESCRIPTION": "Unplayable. NL Retain. NL If this card is Exhausted, add *Parasite in discard pile."
+  }
+  //,
+  //"theMushrooght:i94PersonalHell": {
+  //"NAME": "Personal Hell",
+  //"DESCRIPTION": "Welcome to your little personal hell.",
+  //"UPGRADE_DESCRIPTION": "Welcome to your personal [#980002]HELL[].",
+  //"EXTENDED_DESCRIPTION": ["@CAW!@ NL @CAAAW@"]
+  //}
+  }
+

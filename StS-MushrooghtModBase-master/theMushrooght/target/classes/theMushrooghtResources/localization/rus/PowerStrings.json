@@ -1,0 +1,107 @@
+{
+        "theMushrooght:i1SporePower": {
+                "NAME": "Spore",
+                "DESCRIPTIONS": [
+                        "For each stack, ",
+                        " receives #b10% more damage from #yAttacks. At the end of turn lowers by 3 times.",
+                        " (Receives #b",
+                        "% more damage)"
+                ]
+        },
+        "theMushrooght:i2WeaknessSporePower": {
+                "NAME": "Weakness Spore",
+                "DESCRIPTIONS": [
+                        "For each stack, ",
+                        " deal #b10% less damage from #yAttacks. No more than #b55%. At the end of turn lowers by 3 times.",
+                        " (Deal #b",
+                        "% less damage)",
+                        "(Deal #b55% less damage)"
+                ]
+        },
+        "theMushrooght:i3UnsafeBlockPower": {
+                "NAME": "Unsafe Block",
+                "DESCRIPTIONS": [
+                        "Gain #b",
+                        " #yBlock next turn. #yBlock is not removed at the start of your next turn. Gain #b50% less #yBlock from cards."
+                ]
+        },
+        "theMushrooght:i4GodFormPower": {
+                "NAME": "God Form",
+                "DESCRIPTIONS": [
+                        "At the end of your turn, reduce of your debuffs by #b",
+                        " ."
+                ]
+        },
+        "theMushrooght:i5PaganismPower": {
+                "NAME": "Paganism",
+                "DESCRIPTIONS": [
+                        "At the start of your turn, add #b",
+                        " #yBogue into your discard pile."
+                ]
+        },
+        "theMushrooght:i6MyceliumPower": {
+                "NAME": "Mycelium",
+                "DESCRIPTIONS": [
+                        "When attacked, deals #b",
+                        " damage back and lowers by 2 times."
+                ]
+        },
+        "theMushrooght:i7ConstrainedPower": {
+                "NAME": "Constrained",
+                "DESCRIPTIONS": [
+                        "At the end of its turn, gains #b",
+                        " #yStrength and #yDexterity."
+                ]
+        },
+        "theMushrooght:i8LassitudePower": {
+                "NAME": "Lassitude",
+                "DESCRIPTIONS": [
+                        "Decreases attack damage and #yBlock gained from cards by #b",
+                        "."
+                ]
+        },
+        "theMushrooght:i12MonDexterityPower": {
+                "NAME": "Dexterity",
+                "DESCRIPTIONS": [
+                        "If have a #yBlock at end turn, gain #b",
+                        "If have a #yBlock at end turn, lose #b",
+                        " #yBlock."
+                ]
+        },
+        "theMushrooght:i13ChillingCalmPower": {
+                "NAME": "Chilling Calm",
+                "DESCRIPTIONS": [
+                        "Enter #yCalm at the start of your turn."
+                ]
+        },
+        "theMushrooght:i14GodComingPower": {
+                "NAME": "God Coming",
+                "DESCRIPTIONS": [
+                        "Enter #yDivinity at the start of your turn."
+                ]
+        },
+        "theMushrooght:i15PutridHeartPower": {
+                "NAME": "Putrid Heart",
+                "DESCRIPTIONS": [
+                        "At the start of your turn, add #b",
+                        " #yBizarre #yParasite into your discard pile and draw #b",
+                        " card.",
+                        " cards."
+                ]
+        },
+        "theMushrooght:i16LunacyEvolvePower": {
+                "NAME": "Lunacy Evolve",
+                "DESCRIPTIONS": [
+                        "Whenever you draw a #yStatus or #yCurse card, gain #b",
+                        " #yMycelium."
+                ]
+        },
+        "theMushrooght:i17BizarreParasitePower": {
+                "NAME": "Bizarre Parasite",
+                "DESCRIPTIONS": [
+                        "At the end of combat, heal #b",
+                        " HP, up to #b11 each battle.",
+                        " HP, up to #b5 each battle."
+                ]
+        }
+}
