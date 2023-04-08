@@ -2,12 +2,9 @@ package theMushrooght.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import theMushrooght.util.TextureLoader;
 
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.floorNum;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static theMushrooght.MushrooghtMod.makeRelicOutlinePath;
 import static theMushrooght.MushrooghtMod.makeRelicPath;
@@ -21,28 +18,6 @@ public class i1OvergrownMushroomRelic extends CustomRelic {
 
     public i1OvergrownMushroomRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.FLAT);
-    }
-
-    public void atPreBattle() {
-        if (floorNum <= 1) {
-            flash();
-            player.heal(-35);
-        }
-    }
-
-    public void onUnequip() {
-        if (floorNum <= 1) {
-            player.heal(-35);
-        }
-    }
-
-    public void atTurnStart() {
-        if (this.firstTurn) {
-            if (floorNum <= 1) {
-                new LoseHPAction(player, player, 0, AbstractGameAction.AttackEffect.POISON);
-            }
-            this.firstTurn = false;
-        }
     }
     // Gain 1 energy on equip.
 
