@@ -43,7 +43,7 @@
     "NAME": "Fertile Corpse",
     "FLAVOR": "It would be possible to make not bad stuffed rat. If it wasn't for mushrooms.",
     "DESCRIPTIONS": [
-      "At the start of each combat, add Mushroom Growth into your hand."
+      "At the start of each combat, add Mushroom Growth into your hand, it costs 0 this turn."
     ]
   },
   "theMushrooght:i11GigaparasiteRelic": {
