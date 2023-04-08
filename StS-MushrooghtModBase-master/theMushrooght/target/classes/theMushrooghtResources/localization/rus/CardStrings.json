@@ -33,322 +33,322 @@
   },
   "theMushrooght:i9Assimilation": {
     "NAME": "Ассимиляция",
-    "DESCRIPTION": "Apply !theMushrooght:SecondMagic! themushrooght:Weakness_Spore and !M! themushrooght:Spore to ALL enemies. NL Сжигается."
+    "DESCRIPTION": "Накладывает !theMushrooght:SecondMagic! themushrooght:Ослабляющие_Споры и !M! themushrooght:Споры на ВСЕХ врагов. NL Сжигается."
   },
   "theMushrooght:i10Consumedmind": {
     "NAME": "Поглощённый разум",
-    "DESCRIPTION": "Эфирная. NL Gain !M! themushrooght:Unsafe Block."
+    "DESCRIPTION": "Эфирная. NL Даёт !M! themushrooght:Ненадёжной Защиты."
   },
   "theMushrooght:i11Provocation": {
     "NAME": "Провокация",
-    "DESCRIPTION": "Apply 2 temporary Strength to ALL enemies. NL Gain !M! themushrooght:Unsafe Block."
+    "DESCRIPTION": "Накладывает 2 временные Силы на ВСЕХ врагов. NL Даёт !M! themushrooght:Ненадёжной Защиты."
   },
   "theMushrooght:i12Allelopathy": {
     "NAME": "Аллелопатия",
-    "DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Gain [E]. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Gain [E] [E]. NL Сжигается."
+    "DESCRIPTION": "Добавляет в руку 2 *Странный *паразит. NL Даёт [E]. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку 2 *Странный *паразит. NL Даёт [E] [E]. NL Сжигается."
   },
   "theMushrooght:i13TrueFunk": {
     "NAME": "Чужая воля",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Exhaust 2 cards at random.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Exhaust up to 2 cards in your hand."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Сжигает 2 случ. карты.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Сжигает до 2 выбранных в руке карт."
   },
   "theMushrooght:i14OldTricks": {
     "NAME": "Старые трюки",
-    "DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain !M! Strength and !M! Dexterity. NL At the end of this turn, lose !M! Strength and !M! Dexterity."
+    "DESCRIPTION": "Добавляет в руку 1 *Странный *паразит. NL Даёт !M! Силы и !M! Ловкости. NL Отнимает !M! Силы и !M! Ловкости в конце вашего хода."
   },
   "theMushrooght:i15Psilocin": {
     "NAME": "Псилоцин",
-    "DESCRIPTION": "Apply !theMushrooght:SecondMagic! Poison."
+    "DESCRIPTION": "Накладывает !theMushrooght:SecondMagic! Яда."
   },
   "theMushrooght:i16Reflexion": {
     "NAME": "Рефлексы",
-    "DESCRIPTION": "Draw !theMushrooght:SecondMagic! card. NL Gain !M! themushrooght:Unsafe Block.",
-    "UPGRADE_DESCRIPTION": "Draw !theMushrooght:SecondMagic! cards. NL Gain !M! themushrooght:Unsafe Block."
+    "DESCRIPTION": "Вы берёте !theMushrooght:SecondMagic! карту. NL Даёт !M! themushrooght:Ненадёжной Защиты.",
+    "UPGRADE_DESCRIPTION": "Вы берёте !theMushrooght:SecondMagic! карты. NL Даёт !M! themushrooght:Ненадёжной Защиты."
   },
   "theMushrooght:i17Woe": {
     "NAME": "Головная боль",
-    "DESCRIPTION": "Add a random Uncommon card into your hand. NL It costs 0 this turn. NL Сжигается."
+    "DESCRIPTION": "Добавляет в руку случ. Необычную карту. NL В этом ходу она стоит 0. NL Сжигается."
   },
   "theMushrooght:i18BadInstincts": {
     "NAME": "Плохая реакция",
-    "DESCRIPTION": "Innate. NL Gain !M! themushrooght:Unsafe Block. NL Gain 3 themushrooght:Мицелия. NL Сжигается."
+    "DESCRIPTION": "Начальная. NL Даёт !M! themushrooght:Ненадёжной Защиты. NL Даёт 3 themushrooght:Мицелия. NL Сжигается."
   },
   "theMushrooght:i19Inviolable": {
     "NAME": "Неприкосновенный",
-    "DESCRIPTION": "Innate. NL Gain !M! themushrooght:Мицелия. NL Сжигается."
+    "DESCRIPTION": "Начальная. NL Даёт !M! themushrooght:Мицелия. NL Сжигается."
   },
   "theMushrooght:i20MushroomGrowth2": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Gain !M! themushrooght:Unsafe Block. NL The next Attack you play costs 0. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Даёт !M! themushrooght:Ненадёжной Защиты. NL След. разыгранная Атака стоит 0. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i21MushroomGrowth3": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Draw !M! cards. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Вы берёте !M! карты. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i22MushroomGrowth4": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Apply !M! Poison to a random enemy 4 times. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Накладывает !M! Яда на случ. врага 4 раза. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i23MushroomGrowth5": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Apply !M! Poison and 1 Vulnerable to ALL enemies. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Накладывает !M! Яда и 1 Уязвимости на ВСЕХ врагов. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i24Curselyst": {
     "NAME": "Проклизатор",
-    "DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust 2 cards at random. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust up to 2 cards in your hand. NL Сжигается."
+    "DESCRIPTION": "Удваивает наложенный на врага Яд. NL Сжигает 2 случ. карты. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Double the enemy's Яд. NL Сжигает до 2 выбранных в руке карт. NL Сжигается."
   },
   "theMushrooght:i25Chytridiomycota": {
     "NAME": "Ризомицелий",
-    "DESCRIPTION": "Add 2 *Bizarre *Parasite into your hand. NL Даёт !B! Защиты."
+    "DESCRIPTION": "Добавляет в руку 2 *Странный *паразит. NL Даёт !B! Защиты."
   },
   "theMushrooght:i26Endomycorrhiza": {
     "NAME": "Эндомикориза",
-    "DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain [E]. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Add 1 *Bizarre *Parasite into your hand. NL Gain [E] [E]. NL Сжигается."
+    "DESCRIPTION": "Добавляет в руку *Странный *паразит. NL Даёт [E]. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку *Странный *паразит. NL Даёт [E] [E]. NL Сжигается."
 
   },
   "theMushrooght:i27Ectomycorrhiza": {
     "NAME": "Эктомикориза",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Upgrade a 2 cards in your hand for the rest of combat.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Upgrade all cards in your hand for the rest of combat."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Улучшает 2 карты в руке до конца боя.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Улучшает ВСЕ карты в руке до конца боя."
   },
   "theMushrooght:i28Velum": {
     "NAME": "Плёнка",
-    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust."
+    "DESCRIPTION": "Сжигает все карты в руке, кроме Навыков. NL Даёт [E] за каждую Сожжёную карту."
   },
   "theMushrooght:i29Rhizoctonia": {
-    "NAME": "Rhizoctonia",
-    "DESCRIPTION": "Exhaust all non-Power cards in your hand. NL Gain [E] and heal 1 HP for each card Exhaust."
+    "NAME": "Ризоктонии",
+    "DESCRIPTION": "Сжигает все карты в руке, кроме Талантов. NL Даёт [E] и восполняет 1 ОЗ за каждую Сожжёную карту."
   },
   "theMushrooght:i30Sclerotium": {
-    "NAME": "Sclerotium",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Gain 1 Artifact. NL Сжигается."
+    "NAME": "Склероции",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Даёт 1 Артефакта. NL Сжигается."
   },
   "theMushrooght:i31MonotropoidMycorrhiza": {
-    "NAME": "Monotropoid Mycorrhiza",
-    "DESCRIPTION": "Неиграбельная. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand and Exhaust.",
-    "UPGRADE_DESCRIPTION": "Неиграбельная. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand, gain [E] and Exhaust."
+    "NAME": "Эктоэндомикориза",
+    "DESCRIPTION": "Неиграбельная. NL Добавляет карты *Эндомикориза и *Эктомикориза в руку и Сжигается, когда вы её берёте",
+    "UPGRADE_DESCRIPTION": "Неиграбельная. NL Добавляет карты *Эндомикориза и *Эктомикориза в руку, даёт [E] и Сжигается, когда вы её берёте"
   },
   "theMushrooght:i32FairyRing": {
-    "NAME": "Fairy Ring",
-    "DESCRIPTION": "Эфирная. NL Obtain a random potion. NL Apply !theMushrooght:SecondMagic! Poison to ALL enemies. NL Сжигается."
+    "NAME": "Ведьмин круг",
+    "DESCRIPTION": "Эфирная. NL Даёт случ. зелье. NL Накладывает !theMushrooght:SecondMagic! Яда на ВСЕХ врагов. NL Сжигается."
   },
   "theMushrooght:i33MushroomGrowth6": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Gain !M! themushrooght:Мицелия. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Даёт !M! themushrooght:Мицелия. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i34MushroomGrowth7": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Gain [E]. NL Draw !M! card. NL themushrooght:Быстрый_рост. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Gain [E]. NL Draw !M! cards. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Даёт [E]. NL Вы берёте !M! карту. NL themushrooght:Быстрый_рост. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Даёт [E]. NL Вы берёте !M! карты. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i35Forcing": {
-    "NAME": "Forcing",
-    "DESCRIPTION": "Неиграбельная. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust."
+    "NAME": "Стимуляция",
+    "DESCRIPTION": "Неиграбельная. NL Вы кладёте в руку выбранную Сожжёную карту и эта карта Сжигается, когда вы её берёте."
   },
-  "theMushrooght:i35Stroma": {
-    "NAME": "Stroma",
-    "DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw !M! cards. NL Сжигается."
+  "theMushrooght:i36Stroma": {
+    "NAME": "Стромы",
+    "DESCRIPTION": "Вы перетасовываете ВСЕ свои карты в стопку добора. Вы берёте !M! карты. NL Сжигается."
   },
   "theMushrooght:i37Commensalism": {
-    "NAME": "Commensalism",
-    "DESCRIPTION": "This turn, your next card is played twice."
+    "NAME": "Комменсализм",
+    "DESCRIPTION": "В этом ходу следующая карта разыграется дважды."
   },
   "theMushrooght:i38FenceOff": {
-    "NAME": "Fence Off",
-    "DESCRIPTION": "Неиграбельная. NL When you draw this card, Gain !M! themushrooght:Мицелия and draw 1 card."
+    "NAME": "Огородиться",
+    "DESCRIPTION": "Неиграбельная. NL Даёт !M! themushrooght:Мицелия и вы берёте 1 карту, когда вы её берёте."
   },
   "theMushrooght:i39Adapting": {
-    "NAME": "Adapting",
-    "DESCRIPTION": "Неиграбельная. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand."
+    "NAME": "Адаптация",
+    "DESCRIPTION": "Неиграбельная. NL Вы кладёте 1 выбранную карту из стопки добора в руку, когда вы её берёте."
   },
   "theMushrooght:i40Calmness": {
-    "NAME": "Calmness",
-    "DESCRIPTION": "Неиграбельная. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn"
+    "NAME": "Спокойстие",
+    "DESCRIPTION": "Неиграбельная. NL Оставляется. NL Защита не исчезнет в начале вашего хода, если эта карта в руке"
   },
   "theMushrooght:i41Haustoria": {
-    "NAME": "Haustoria",
+    "NAME": "Гаустория",
     "DESCRIPTION": "Даёт !B! Защиты. NL Наносит !D! урона."
   },
   "theMushrooght:i42PowderyMildew": {
-    "NAME": "Powdery Mildew",
-    "DESCRIPTION": "Deal !D! damage twice. NL Increase the damage of ALL Powdery Mildew cards by 1 this combat."
+    "NAME": "Пепельница",
+    "DESCRIPTION": "Наносит !D! урона дважды. NL Увеличивает урон ВСЕХ Пепельниц в этом бою на 1."
   },
   "theMushrooght:i43MushroomGrowth8": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i44MushroomGrowth9": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL Next turn, gain [E]. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт [E] в след. ходу. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i45MushroomGrowth10": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL Draw !M! card. NL themushrooght:Быстрый_рост. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Draw !M! cards. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Вы берёте !M! карту. NL themushrooght:Быстрый_рост. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Вы бёрете !M! карты. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i46MycelialCord": {
-    "NAME": "Mycelial Cord",
+    "NAME": "Шнуры",
     "DESCRIPTION": "Даёт !B! Защиты. NL Наносит !D! урона."
   },
   "theMushrooght:i47Rhizomorph": {
-    "NAME": "Rhizomorph",
+    "NAME": "Ризоморфы",
     "DESCRIPTION": "Даёт !B! Защиты. NL Наносит !D! урона."
   },
   "theMushrooght:i48PurestIre": {
-    "NAME": "Purest Ire",
-    "DESCRIPTION": "Наносит !D! урона. NL Gain !M! themushrooght:Мицелия. NL Add a copy of this card to your discard and draw pile. NL Сжигается."
+    "NAME": "Чистейшая ярость",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! themushrooght:Мицелия. NL Добавляет свою копию в стопку сброса и добора. NL Сжигается."
   },
   "theMushrooght:i49LearnRussianStrike": {
-    "NAME": "Learn Russian Strike",
-    "DESCRIPTION": "Наносит !D! урона. NL Deals an additional 3 damage for ALL of your cards containing \"Strike\"."
+    "NAME": "МЫШЬечный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Наносит по 3 доп. урона за КАЖДУЮ карту в колоде, содержащую «Удар» в названии."
   },
   "theMushrooght:i50FightToTheDeath": {
-    "NAME": "Fight to the Death",
-    "DESCRIPTION": "Can only be played if every card in your hand is an Attack. NL Deal 1 more damage for each time you lose HP in combat. NL Наносит !D! урона."
+    "NAME": "Битва насмерть",
+    "DESCRIPTION": "Можно разыграть, если в руке только карты Атаки. NL Наносит на 1 больше урона после каждой потери ваши ОЗ в этом бою. NL Наносит !D! урона."
   },
   "theMushrooght:i51WellLaidStrike": {
-    "NAME": "Well-Laid Strike",
-    "DESCRIPTION": "Наносит !D! урона. NL Put the next card you play this turn on top of your draw pile. "
+    "NAME": "Спланированный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы кладёте след. разыгранную в этом ходу карту на верх стопки добора."
   },
   "theMushrooght:i52Chemotropism": {
-    "NAME": "Chemotropism",
-    "DESCRIPTION": "Remove all Block from the enemy. NL Наносит !D! урона. NL Apply !theMushrooght:SecondMagic! Poison."
+    "NAME": "Хемотрофизм",
+    "DESCRIPTION": "Сбивает всю Защиту врага. NL Наносит !D! урона. NL Накладывает !theMushrooght:SecondMagic! Яда."
   },
   "theMushrooght:i53Appressorium": {
-    "NAME": "Appressorium",
-    "DESCRIPTION": "Наносит !D! урона. NL Apply !theMushrooght:SecondMagic! themushrooght:Weakness_Spore and !M! themushrooght:Spore."
+    "NAME": "Аппрессорий",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !theMushrooght:SecondMagic! themushrooght:Ослабляющие_Споры и !M! themushrooght:Споры."
   },
   "theMushrooght:i54RustyStrike": {
-    "NAME": "Rusty Strike",
-    "DESCRIPTION": "Наносит !D! урона. NL Apply !theMushrooght:SecondMagic! Poison."
+    "NAME": "Ржавый удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !theMushrooght:SecondMagic! Яда."
   },
   "theMushrooght:i55MushroomGrowth11": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL Whenever you attack this enemy, gain !M! Block. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! Защиты, когда вы атакуете выбранного врага. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i56MushroomGrowth12": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL Даёт !B! Защиты. NL Permanently increase this card's Block by 3. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !B! Защиты. NL Навсегда повышает даваемую этой картой Защиту на 3. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i57MushroomGrowth13": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона !M! раз. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i58MushroomGrowth14": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Deal !D! damage for each Attack in your hand. NL themushrooght:Быстрый_рост. NL Сжигается.",
+    "DESCRIPTION": "Наносит по !D! урона за каждую Атаку в руке. NL themushrooght:Быстрый_рост. NL Сжигается.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have ",
-      " Attack).",
-      " Attacks)."
+      " NL (В руке ",
+      " карта Атаки.",
+      " карт(ы) Атаки)."
     ]
   },
   "theMushrooght:i59Amensalism": {
-    "NAME": "Amensalism",
-    "DESCRIPTION": "Наносит !D! урона. NL Strike."
+    "NAME": "Аменсализм",
+    "DESCRIPTION": "Наносит !D! урона. NL Эта карта считается как карта содержащая «Удар» в названии."
   },
   "theMushrooght:i60Allelopathy": {
-    "NAME": "Allelopathy",
-    "DESCRIPTION": "Наносит !D! урона. NL Gain 2 Frail."
+    "NAME": "Аллелопатия",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт 2 Хрупкости."
   },
   "theMushrooght:i61Inquiline": {
-    "NAME": "Inquiline",
-    "DESCRIPTION": "Наносит !D! урона. NL Enemy lose 1 Plated Armor and Metallicize. Apply 1 Vulnerable."
+    "NAME": "Инквилинизм",
+    "DESCRIPTION": "Наносит !D! урона. NL Сбивает 1 *Панцирь и *Металлизация с врага. Накладывает 1 Уязвимость."
   },
   "theMushrooght:i62Compost": {
-    "NAME": "Compost",
-    "DESCRIPTION": "Наносит !D! урона. NL If this kills an enemy, gain [E] [E] [E]."
+    "NAME": "Компост",
+    "DESCRIPTION": "Наносит !D! урона. NL Убив врага, даёт [E] [E] [E]."
   },
   "theMushrooght:i63Massacre": {
-    "NAME": "Massacre",
+    "NAME": "Мясорубрка",
     "DESCRIPTION": "Эфирная. NL Наносит !D! урона."
   },
   "theMushrooght:i64StrikeWithRecoil": {
-    "NAME": "Strike with Recoil",
-    "DESCRIPTION": "Наносит !D! урона. NL Add 1 *Bizarre *Parasite into your discard pile."
+    "NAME": "Удар с отдачей",
+    "DESCRIPTION": "Наносит !D! урона. NL Добавляет 1 *Странный *паразит в стопку сброса ."
   },
   "theMushrooght:i65Hypha": {
-    "NAME": "Hypha",
+    "NAME": "Гифа",
     "DESCRIPTION": "Даёт !B! Защиты. NL Наносит !D! урона."
   },
   "theMushrooght:i66FlashOfRust": {
-    "NAME": "Flash of Rust",
-    "DESCRIPTION": "Наносит !D! урона. NL Gain [E]."
+    "NAME": "Ржавый след",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт [E]."
   },
   "theMushrooght:i67MushroomGrowth15": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL Gain themushrooght:Мицелия equal to unblocked damage dealt. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт themushrooght:Мицелия, равную кол-ву нанесённого урона по ОЗ врага. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i68MushroomGrowth16": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Наносит !D! урона. NL If the last card played this combat was a Power, gain !M! Strength. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! Силы, если последняя разыгранная карта в этом бою - Талант. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i69Neutralism": {
-    "NAME": "Neutralism",
-    "DESCRIPTION": "Gain 1 Strength, Dexterity and [E]. NL Apply 2 themushrooght:Weakness_Spore to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Strength, Dexterity, [E] and 3 themushrooght:Мицелия. NL Apply 2 themushrooght:Weakness_Spore to ALL enemies."
+    "NAME": "Нейтрализм",
+    "DESCRIPTION": "Даёт 1 Силы, Ловкости и [E]. NL Накладывает 2 themushrooght:Ослабляющие_Споры на ВСЕХ врагов.",
+    "UPGRADE_DESCRIPTION": "Даёт 1 Силы, Ловкости, [E] и 3 themushrooght:Мицелия. NL Накладывает 2 themushrooght:Ослабляющие_Споры на ВСЕХ врагов."
   },
   "theMushrooght:i70Protocooperation": {
-    "NAME": "Protocooperation",
-    "DESCRIPTION": "Gain !M! Strength. NL Apply !M! Dexterity to ALL enemies."
+    "NAME": "Протокооперация",
+    "DESCRIPTION": "Даёт !M! Силы. NL Накладывает !M! Ловкости на ВСЕХ врагов."
   },
   "theMushrooght:i71MushroomGrowth17": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "At the end of your turn, gain !M! Block. NL Apply 1 themushrooght:Spore to ALL enemies. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Даёт !M! Защиты в конце каждого вашего хода. NL Накладывает 1 themushrooght:Споры на ВСЕХ врагов. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i72MushroomGrowth18": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "At the start of your turn, apply !M! Poison to ALL enemies. NL Apply 3 themushrooght:Spore to ALL enemies. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Накладывает !M! Яда на ВСЕХ врагов в начале каждого вашего хода. NL Накладывает 3 themushrooght:Споры на ВСЕХ врагов. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i73Competition": {
-    "NAME": "Competition",
-    "DESCRIPTION": "Gain !M! Dexterity. NL Apply 1 Strength and !theMushrooght:SecondMagic! themushrooght:Weakness_Spore to ALL enemies."
+    "NAME": "Конкуренция",
+    "DESCRIPTION": "Даёт !M! Ловкости. NL Накладывает 1 Силы и !theMushrooght:SecondMagic! themushrooght:Ослабляющие_Споры на ВСЕХ врагов."
   },
   "theMushrooght:i74Homostasis": {
-    "NAME": "Homostasis",
-    "DESCRIPTION": "Heal 6 HP. NL Gain !M! themushrooght:Мицелия. NL Apply 2 themushrooght:Spore to ALL enemies."
+    "NAME": "Гомеостаз",
+    "DESCRIPTION": "Восполняет 6 ОЗ. NL Даёт !M! themushrooght:Мицелия. NL Накладывает 2 themushrooght:Споры на ВСЕХ врагов."
   },
   "theMushrooght:i75GodForm": {
-    "NAME": "God Form",
-    "DESCRIPTION": "Эфирная. NL At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile.",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile."
+    "NAME": "Облик господа",
+    "DESCRIPTION": "Эфирная. NL Снимает 1 слой отриц. эффекта и добавляет *Отходняк в стопку сброса.",
+    "UPGRADE_DESCRIPTION": "Снимает 1 слой отриц. эффекта и добавляет *Отходняк в стопку сброса."
   },
   "theMushrooght:i76PutridHeart": {
-    "NAME": "Putrid Heart",
-    "DESCRIPTION": "At the start of your turn, add 1 *Bizarre *Parasite into your discard pile and draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add 1 *Bizarre *Parasite into your discard pile and draw 1 card."
+    "NAME": "Гнилое сердце",
+    "DESCRIPTION": "Вы получаете 1 *Странный *паразит в стопку сброса и вы берёте 1 карту в начале вашего хода.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Вы получаете 1 *Странный *паразит в стопку сброса и вы берёте 1 карту в начале вашего хода."
   },
   "theMushrooght:i77MushroomGrowth19": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Whenever you apply a Debuff to an enemy, they take !M! damage. NL Apply 3 themushrooght:Spore to ALL enemies. NL themushrooght:Быстрый_рост. NL Сжигается."
+    "DESCRIPTION": "Враг получает !M! урона, когда вы накладываете на него отриц. эффект. NL Накладывает 3 themushrooght:Споры на ВСЕХ врагов. NL themushrooght:Быстрый_рост. NL Сжигается."
   },
   "theMushrooght:i78LunacyEvolve": {
-    "NAME": "Lunacy Evolve",
-    "DESCRIPTION": "Whenever you draw a Status or Curse card, gain !M! themushrooght:Мицелия. NL Apply 1 themushrooght:Weakness_Spore to ALL enemies."
+    "NAME": "Безумная эволюция",
+    "DESCRIPTION": "Вы получаете !M! themushrooght:Мицелия, когда берёте Статус или Проклятие. NL Накладывает 1 themushrooght:Ослабляющие_Споры на ВСЕХ врагов."
   },
   "theMushrooght:i79UtterMastery": {
-    "NAME": "Utter Mastery",
-    "DESCRIPTION": "Whenever you play a card, gain 1 Block and deal 1 damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. Whenever you play a card, gain 1 Block and deal 2 damage to ALL enemies."
+    "NAME": "Абсолютное мастерство",
+    "DESCRIPTION": "Даёт 1 Защиту и наносит 1 урона ВСЕМ врагам, когда вы разыгрываете карту.",
+    "UPGRADE_DESCRIPTION": "Начальная. Даёт 1 Защиту и наносит 2 урона ВСЕМ врагам, когда вы разыгрываете карту"
   },
   "theMushrooght:i80Bogue": {
-    "NAME": "Bogue",
-    "DESCRIPTION": "Неиграбельная. NL Эфирная. NL At the end of your turn, lose 1 Strength and Dexterity."
+    "NAME": "Отходняк",
+    "DESCRIPTION": "Неиграбельная. NL Эфирная. NL Отнимает 1 Силы и Ловкости в конце вашего хода, если эта карта в руке. NL Вы становитесь сильнее."
   },
   "theMushrooght:i81BizarreParasite": {
-    "NAME": "Bizarre Parasite",
-    "DESCRIPTION": "Неиграбельная. NL If this card is Exhausted, heal 1 HP and draw 1 card."
+    "NAME": "Странный паразит",
+    "DESCRIPTION": "Неиграбельная. NL Восполняет 1 ОЗ и берёте 1 карту, когда Сжигается."
   },
   "theMushrooght:i82Mycoheterotrophy": {
-    "NAME": "Myco-heterotrophy",
-    "DESCRIPTION": "Неиграбельная. NL At the end of your turn, gain 1 Frail."
+    "NAME": "Микогетеротрофия",
+    "DESCRIPTION": "Неиграбельная. NL Вы получаете 1 Хрупкости в конце вашего хода, если эта карта в руке."
   },
   "theMushrooght:i83MushroomGrowth20": {
     "NAME": "Быстрый рост",
-    "DESCRIPTION": "Неиграбельная. NL Retain. NL If this card is Exhausted, add *Parasite in discard pile."
+    "DESCRIPTION": "Неиграбельная. NL Оставляется. NL Добавляет *Паразит в стопку сброса, когда Сжигается."
   }
   //,
   //"theMushrooght:i94PersonalHell": {

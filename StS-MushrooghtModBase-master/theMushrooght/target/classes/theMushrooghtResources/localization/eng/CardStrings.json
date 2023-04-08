@@ -96,8 +96,8 @@
   },
   "theMushrooght:i24Curselyst": {
     "NAME": "Curselyst",
-    "DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust 2 cards at random. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Double the enemy's NL Poison. NL Exhaust up to 2 cards in your hand. NL Exhaust."
+    "DESCRIPTION": "Double the enemy's Poison. NL Exhaust 2 cards at random. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double the enemy's Poison. NL Exhaust up to 2 cards in your hand. NL Exhaust."
   },
   "theMushrooght:i25Chytridiomycota": {
     "NAME": "Chytridiomycota",
@@ -128,8 +128,8 @@
   },
   "theMushrooght:i31MonotropoidMycorrhiza": {
     "NAME": "Monotropoid Mycorrhiza",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand and Exhaust.",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this card, add Endomycorrhiza and Ectomycorrhiza to your hand, gain [E] and Exhaust."
+    "DESCRIPTION": "Unplayable. NL When you draw this card, add *Endomycorrhiza and *Ectomycorrhiza to your hand and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this card, add *Endomycorrhiza and *Ectomycorrhiza to your hand, gain [E] and Exhaust."
   },
   "theMushrooght:i32FairyRing": {
     "NAME": "Fairy Ring",
@@ -256,7 +256,7 @@
   },
   "theMushrooght:i61Inquiline": {
     "NAME": "Inquiline",
-    "DESCRIPTION": "Deal !D! damage. NL Enemy lose 1 Plated Armor and Metallicize. Apply 1 Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Enemy lose 1 *Plated *Armor and *Metallicize. Apply 1 Vulnerable."
   },
   "theMushrooght:i62Compost": {
     "NAME": "Compost",
@@ -336,7 +336,7 @@
   },
   "theMushrooght:i80Bogue": {
     "NAME": "Bogue",
-    "DESCRIPTION": "Unplayable. NL Ethereal. NL At the end of your turn, lose 1 Strength and Dexterity."
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL At the end of your turn, lose 1 Strength and Dexterity. NL You get stronger"
   },
   "theMushrooght:i81BizarreParasite": {
     "NAME": "Bizarre Parasite",

@@ -34,8 +34,8 @@ public class i50FightToTheDeath extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
 
     public i50FightToTheDeath() {

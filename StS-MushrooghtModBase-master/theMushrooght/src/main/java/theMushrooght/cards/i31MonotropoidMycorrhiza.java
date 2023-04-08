@@ -35,7 +35,8 @@ public class i31MonotropoidMycorrhiza extends AbstractDynamicCard {
 
     public i31MonotropoidMycorrhiza() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        this.cardsToPreview = new i26Endomycorrhiza();
+        this.cardsToPreview = new i27Ectomycorrhiza();
     }
 
     public void triggerWhenDrawn() {

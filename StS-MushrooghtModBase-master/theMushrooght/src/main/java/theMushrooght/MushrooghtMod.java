@@ -455,14 +455,17 @@ public class MushrooghtMod implements
 
     @Override
     public void receiveEditKeywords() {
+        loadKeywords("eng");
+        if (Settings.language != Settings.GameLanguage.ENG)
+            loadKeywords(Settings.language.toString().toLowerCase());
+    }
+    private void loadKeywords(String langKey) {
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/KeywordStrings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(getModID() + "Resources/localization/" + langKey + "/KeywordStrings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(String.valueOf(json), com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
 
-        if (keywords != null) {
-            for (Keyword keyword : keywords) {
-                BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-            }
+        for (Keyword keyword : keywords) {
+            BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
         }
     }
     // ================ LOAD THE TEXT ===================
