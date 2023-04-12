@@ -31,7 +31,7 @@ public class i58MushroomGrowth14 extends AbstractGrowthCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 4;
     private static final int UPGRADE_PLUS_DMG = 2;
 
 
@@ -59,7 +59,7 @@ public class i58MushroomGrowth14 extends AbstractGrowthCard {
     }
     public void applyPowers() {
         super.applyPowers();
-        int count = -1;
+        int count = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.ATTACK)
                 count++;

@@ -46,9 +46,12 @@ public class i35Forcing extends AbstractDynamicCard {
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         return false;
     }
-
-    public void upgrade() {}
-
+    public void upgrade() {
+        this.name = cardStrings.EXTENDED_DESCRIPTION[0];
+    }
+    public boolean canUpgrade() {
+        return false;
+    }
 
     public AbstractCard makeCopy() {
         return new i35Forcing();

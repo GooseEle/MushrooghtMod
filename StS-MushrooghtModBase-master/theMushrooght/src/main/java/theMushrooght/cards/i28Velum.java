@@ -41,9 +41,14 @@ public class i28Velum extends AbstractDynamicCard {
         addToBot(new i1VelumEnergyAction(this.magicNumber));
     }
 
-    // Upgraded stats.
+
     @Override
-    public void upgrade() {}
+    public void upgrade() {
+        this.name = cardStrings.EXTENDED_DESCRIPTION[0];
+    }
+    public boolean canUpgrade() {
+        return false;
+    }
 
     public AbstractCard makeCopy() {
         return new i28Velum();

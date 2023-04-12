@@ -44,19 +44,13 @@ public class i69Neutralism extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+        addToBot(new GainEnergyAction(1));
 
-        new GainEnergyAction(1);
-
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            flash();
-            for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    addToBot(new ApplyPowerAction(m, p, new i2WeaknessSporePower(m, 3), 3));
-                }
-            }
+        if (!upgraded) {
+            addToBot(new ApplyPowerAction(p, p, new i6MyceliumPower(p, p, 3), 3));
         }
-                    if (!upgraded) {
-                        addToBot(new ApplyPowerAction(p, p, new i6MyceliumPower(p, p, 3), 3));
+        for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+            addToBot(new ApplyPowerAction(monster, p, new i2WeaknessSporePower(monster, 3), 3));
         }
     }
 

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.powers.i7ConstrainedPower;
 import theMushrooght.powers.i8LassitudePower;
@@ -37,6 +38,7 @@ public class i80Bogue extends AbstractDynamicCard {
     public void triggerOnEndOfPlayerTurn() {
         addToBot(new ApplyPowerAction(player, player, new i7ConstrainedPower(player, 1), 1));
         addToBot(new ApplyPowerAction(player, player, new i8LassitudePower(player, 1), 1));
+        addToBot(new ApplyPowerAction(player, player, new DrawCardNextTurnPower(player, 1), 1));
         addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
     }
 

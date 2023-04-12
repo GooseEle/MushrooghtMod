@@ -42,7 +42,7 @@ public class i68MushroomGrowth16 extends AbstractGrowthCard {
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = SILA;
         MushrooghtMod.loadJokeCardImage(this, ".png");
-
+        this.exhaust = true;
     }
 
 

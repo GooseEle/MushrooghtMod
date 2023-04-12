@@ -116,7 +116,10 @@
   },
   "theMushrooght:i28Velum": {
     "NAME": "Velum",
-    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust."
+    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+      ]
   },
   "theMushrooght:i29Rhizoctonia": {
     "NAME": "Rhizoctonia",
@@ -146,8 +149,11 @@
   },
   "theMushrooght:i35Forcing": {
     "NAME": "Forcing",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust."
-  },
+    "DESCRIPTION": "Unplayable. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
+},
   "theMushrooght:i35Stroma": {
     "NAME": "Stroma",
     "DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw !M! cards. NL Exhaust."
@@ -162,11 +168,17 @@
   },
   "theMushrooght:i39Adapting": {
     "NAME": "Adapting",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand."
+    "DESCRIPTION": "Unplayable. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
   },
   "theMushrooght:i40Calmness": {
     "NAME": "Calmness",
-    "DESCRIPTION": "Unplayable. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn"
+    "DESCRIPTION": "Unplayable. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
   },
   "theMushrooght:i41Haustoria": {
     "NAME": "Haustoria",
@@ -313,8 +325,8 @@
   },
   "theMushrooght:i75GodForm": {
     "NAME": "God Form",
-    "DESCRIPTION": "Ethereal. NL At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile.",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, reduce of your debuffs by 1 and add a *Bogue into your discard pile."
+    "DESCRIPTION": "Ethereal. NL At the end of your turn, reduce of your debuffs by 1. NL At the start of your turn, add a *Bogue into your discard pile.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, reduce of your debuffs by 1. NL At the start of your turn, add a *Bogue into your discard pile."
   },
   "theMushrooght:i76PutridHeart": {
     "NAME": "Putrid Heart",

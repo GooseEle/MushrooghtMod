@@ -1,6 +1,7 @@
 package theMushrooght.cards;
 
 import com.megacrit.cardcrawl.actions.common.BetterDrawPileToHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.characters.TheDefault;
@@ -27,7 +28,15 @@ public class i39Adapting extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {}
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {return false;}
-
     @Override
-    public void upgrade() {}
+    public void upgrade() {
+        this.name = cardStrings.EXTENDED_DESCRIPTION[0];
+    }
+    public boolean canUpgrade() {
+        return false;
+    }
+
+    public AbstractCard makeCopy() {
+        return new i39Adapting();
+    }
 }

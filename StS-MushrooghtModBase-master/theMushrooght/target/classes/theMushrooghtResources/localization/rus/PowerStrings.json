@@ -1,71 +1,71 @@
 {
         "theMushrooght:i1SporePower": {
-                "NAME": "Spore",
+                "NAME": "Споры",
                 "DESCRIPTIONS": [
-                        "For each stack, ",
-                        " receives #b10% more damage from #yAttacks. At the end of turn lowers by 3 times.",
-                        " (Receives #b",
-                        "% more damage)"
+                        "За каждый слой, ",
+                        " получает на #b10% больше урона от #yАьак. Уменьшается в 3 раза в конце хода.",
+                        " (Получает на #b",
+                        "% больше урона)"
                 ]
         },
         "theMushrooght:i2WeaknessSporePower": {
-                "NAME": "Weakness Spore",
+                "NAME": "Ослабляющие споры",
                 "DESCRIPTIONS": [
-                        "For each stack, ",
-                        " deal #b10% less damage from #yAttacks. No more than #b55%. At the end of turn lowers by 3 times.",
-                        " (Deal #b",
-                        "% less damage)",
-                        "(Deal #b55% less damage)"
+                        "За каждый слой, ",
+                        " наносит на #b10% меньше урона от #yАтак. Не более #b55%. Уменьшается в 3 раза в конце хода.",
+                        " (Наносит на #b",
+                        "% меньше урона)",
+                        "(Наносит на #b55% меньше урона)"
                 ]
         },
         "theMushrooght:i3UnsafeBlockPower": {
-                "NAME": "Unsafe Block",
+                "NAME": "Ненадёжная защита",
                 "DESCRIPTIONS": [
-                        "Gain #b",
-                        " #yBlock next turn. #yBlock is not removed at the start of your next turn. Gain #b50% less #yBlock from cards."
+                        "Даёт #b",
+                        " #yЗащиты в начале след. хода. #yЗащита не исчезает в конце этого хода. Вы получаете на #b50% меньше #yBlock защиты от карт."
                 ]
         },
         "theMushrooght:i4GodFormPower": {
-                "NAME": "God Form",
+                "NAME": "Облик господа",
                 "DESCRIPTIONS": [
-                        "At the end of your turn, reduce of your debuffs by #b",
-                        " ."
+                        "Уменьшает слои отриц. эффекты на #b",
+                        " , в конце вашего хода."
                 ]
         },
         "theMushrooght:i5PaganismPower": {
-                "NAME": "Paganism",
+                "NAME": "Язычник",
                 "DESCRIPTIONS": [
-                        "At the start of your turn, add #b",
-                        " #yBogue into your discard pile."
+                        "Добавляет #b",
+                        " #yОтходняк в стопку сброса в начале хода."
                 ]
         },
         "theMushrooght:i6MyceliumPower": {
-                "NAME": "Mycelium",
+                "NAME": "Мицелий",
                 "DESCRIPTIONS": [
-                        "When attacked, deals #b",
-                        " damage back and lowers by 2 times."
+                        "Наносит #b",
+                        " урона и уменьшается в 2 раза в ответ на каждую атаку."
                 ]
         },
         "theMushrooght:i7ConstrainedPower": {
-                "NAME": "Constrained",
+                "NAME": "Давление",
                 "DESCRIPTIONS": [
-                        "At the end of its turn, gains #b",
-                        " #yStrength and #yDexterity."
+                        "Получите #b",
+                        " #yСилы и #yЛовкости в конце этого хода."
                 ]
         },
         "theMushrooght:i8LassitudePower": {
-                "NAME": "Lassitude",
+                "NAME": "Усталость",
                 "DESCRIPTIONS": [
-                        "Decreases attack damage and #yBlock gained from cards by #b",
+                        "Уменьшает урон и #yЗащиту от карт на #b",
                         "."
                 ]
         },
         "theMushrooght:i12MonDexterityPower": {
-                "NAME": "Dexterity",
+                "NAME": "Ловкость",
                 "DESCRIPTIONS": [
-                        "If have a #yBlock at end turn, gain #b",
-                        "If have a #yBlock at end turn, lose #b",
-                        " #yBlock."
+                        "Если есть защита #yBlock в конце хода, получает #b",
+                        "Если есть защита #yBlock в конце хода, теряет #b",
+                        " #yЗащиты."
                 ]
         },
         "theMushrooght:i13ChillingCalmPower": {
@@ -81,27 +81,27 @@
                 ]
         },
         "theMushrooght:i15PutridHeartPower": {
-                "NAME": "Putrid Heart",
+                "NAME": "Гнилое сердце",
                 "DESCRIPTIONS": [
-                        "At the start of your turn, add #b",
-                        " #yBizarre #yParasite into your discard pile and draw #b",
-                        " card.",
-                        " cards."
+                        "В начале хода добавляет #b",
+                        " #yСтранный #yпаразит в стопку сброса и вы берёте #b",
+                        " карту.",
+                        " карты."
                 ]
         },
         "theMushrooght:i16LunacyEvolvePower": {
-                "NAME": "Lunacy Evolve",
+                "NAME": "Безумная эволюция",
                 "DESCRIPTIONS": [
-                        "Whenever you draw a #yStatus or #yCurse card, gain #b",
-                        " #yMycelium."
+                        "Даёт #b",
+                        " #yМицелия, когда Вы вытягиваете #yСтатус или #yПроклятие."
                 ]
         },
         "theMushrooght:i17BizarreParasitePower": {
-                "NAME": "Bizarre Parasite",
+                "NAME": "Странный паразит",
                 "DESCRIPTIONS": [
-                        "At the end of combat, heal #b",
-                        " HP, up to #b11 each battle.",
-                        " HP, up to #b5 each battle."
+                        "Воссполните #b",
+                        " ОЗ в конце боя, до #b11 за бой.",
+                        " ОЗ в конце боя, до #b5 за бой."
                 ]
         }
 }

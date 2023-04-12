@@ -1,9 +1,9 @@
 {
   "theMushrooght:i1OvergrownMushroomRelic": {
-    "NAME": "Overgrown Mushroom",
-    "FLAVOR": "This mushroom has been on you ever since you woke up... And it seems to have gone straight into your brain.",
+    "NAME": "Приросший Гриб",
+    "FLAVOR": "Этот гриб на вас с тех пор как вы очнулись... И кажется он проник прямиком в ваш мозг.",
     "DESCRIPTIONS": [
-      "At the end turn, you lose 2 #yWeak, #yFrail and #yVulnerable."
+      "В конце хода вы теряете 2 сразу #yСлабости, #yУязимости и #yХрукости, а не 1."
     ]
   },
   "theMushrooght:PlaceholderRelic2": {
@@ -32,25 +32,25 @@
     ]
   },
   "theMushrooght:i2FightsForDummiesRelic": {
-    "NAME": "Fights for Dummies",
-    "FLAVOR": "An old book that ****** *e*d to you before *o*** ** ***. Ah, the good old days.",
+    "NAME": "Битвы Для Чайников",
+    "FLAVOR": "Старая книга которую вам **** *н*м *и**** ****. Эх, старые добрые времена.",
     "DESCRIPTIONS": [
-      "If you play only Defend and cards containing \"Strike\" during your turn, gain an additional ",
-      "[E] next turn."
+      "Если вы играли в ходу только Оборона и карты содержащие «Удар» в названии, вы получите ",
+      "[E] в следующем ходу."
     ]
   },
   "theMushrooght:i3FertileCorpseRelic": {
-    "NAME": "Fertile Corpse",
-    "FLAVOR": "It would be possible to make not bad stuffed rat. If it wasn't for mushrooms.",
+    "NAME": "Закуска",
+    "FLAVOR": "Можно было бы сделать не плохое чучело. Если бы не грибы.",
     "DESCRIPTIONS": [
-      "At the start of each combat, add Mushroom Growth into your hand."
+      "В начале боя добавляет в руку карту Грибной рост. Она стоит 0 в этом ходу."
     ]
   },
   "theMushrooght:i11GigaparasiteRelic": {
-    "NAME": "Gigaparasite",
-    "FLAVOR": "This parasite is TOO big. Where did the merchant get it?",
+    "NAME": "Паразит-переросток",
+    "FLAVOR": "Этот паразит СЛИШКОМ большой. Где торговец его вообще достал?",
     "DESCRIPTIONS": [
-      "Up Bizarre Parasite heal to #b11 each combat."
+      "Макмальное лечение от Странный паразит увеличено до #b11."
     ]
   }
 }
