@@ -6,43 +6,50 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
-import static theMushrooght.MushrooghtMod.makeCardPath;
+import static theMushrooght.MushrooghtMod.makeCardPathRustrike;
 
 public class i49LearnRussianStrike extends AbstractDynamicCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i49LearnRussianStrike.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("AttackCommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i49LearnRussianStrike.class.getSimpleName());
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+
+    public static String IMG = makeCardPathRustrike("i49LearnRussianStrike.png", "i49LearnRussianStrikeDuolingo.png");
 
 
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
 
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.COMMON;
+    private static CardTarget TARGET = CardTarget.ENEMY;
+    private static CardType TYPE = CardType.ATTACK;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 2;
-    private static final int DAMAGE = 0;
-    private static final int UPGRADE_PLUS_DMG = 6;
+    private static int COST = 2;
+    private static int DAMAGE = 0;
+    private static int UPGRADE_PLUS_DMG = 6;
 
 
     public i49LearnRussianStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        if (Settings.language == Settings.GameLanguage.RUS)
+            MushrooghtMod.loadJokeCardImage(this, "i49LearnRussianStrike.png");
+        else
+            MushrooghtMod.loadJokeCardImage(this, "i49LearnRussianStrikeDuolingo.png");
+        
         baseDamage = DAMAGE;
         this.tags.add(AbstractCard.CardTags.STRIKE);
-        MushrooghtMod.loadJokeCardImage(this, ".png");
+        
 
     }
 

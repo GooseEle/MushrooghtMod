@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import theMushrooght.MushrooghtMod;
 
 public class EtherealMod extends AbstractCardModifier {
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(EtherealMod.class.getSimpleName());
+    public static String ID = theMushrooght.MushrooghtMod.makeID(EtherealMod.class.getSimpleName());
 
     public String modifyDescription(String rawDescription, AbstractCard card) {
         if (!card.selfRetain) {

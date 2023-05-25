@@ -6,32 +6,33 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i14OldTricks extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i14OldTricks.class.getSimpleName());
-    public static final String IMG = makeCardPath("i14OldTricks.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i14OldTricks.class.getSimpleName());
+    public static String IMG = makeCardPath("i14OldTricks.png");
 
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
-    private static final int COST = 1;
-    private static final int TRICKS = 1;
-    private static final int UPGRADE_PLUS_TRICKS = 1;
+    private static CardRarity RARITY = CardRarity.COMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static int COST = 1;
+    private static int TRICKS = 1;
+    private static int UPGRADE_PLUS_TRICKS = 1;
 
     // /STAT DECLARATION/
 
     public i14OldTricks() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         magicNumber = baseMagicNumber = TRICKS;
         this.cardsToPreview = new i81BizarreParasite();
-        MushrooghtMod.loadJokeCardImage(this, "i14OldTricks.png");
     }
 
     // Actions the card should do.

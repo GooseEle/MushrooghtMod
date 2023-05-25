@@ -15,44 +15,46 @@ import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i3DrainPower extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i3DrainPower.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i3DrainPower.class.getSimpleName());
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("i3DrainPower.png");
-
-
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static String IMG = makeCardPath("i3DrainPower.png");
 
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 2;
-    private static final int UPGRADE_PLUS_DMG = 2;
-    private static final int STRENGTH = 1;
+    private static CardRarity RARITY = CardRarity.BASIC;
+    private static CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static CardType TYPE = CardType.ATTACK;
 
-    private static final int UPGRADE_PLUS_STRENGTH = 1;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+
+    private static int COST = 1;
+    private static int DAMAGE = 2;
+    private static int UPGRADE_PLUS_DMG = 2;
+    private static int STRENGTH = 1;
+
+    private static int UPGRADE_PLUS_STRENGTH = 1;
 
 
     public i3DrainPower() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i3DrainPower.png");
+        
         this.exhaust = true;
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = 2;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = STRENGTH;
-        MushrooghtMod.loadJokeCardImage(this, "i3DrainPower.png");
+        
     }
 
 

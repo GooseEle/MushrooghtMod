@@ -9,38 +9,44 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AfterImagePower;
 import com.megacrit.cardcrawl.powers.ThousandCutsPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i79UtterMastery extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i79UtterMastery.class.getSimpleName());
-    public static final String IMG = makeCardPath("PowerRare.png");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i79UtterMastery.class.getSimpleName());
+    public static String IMG = makeCardPath("i79UtterMastery.png");
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.RARE;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.POWER;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 666;
-    private static final int UPGRADE_COST = 2;
-    private static final int SHARP = 1;
-    private static final int UPGRADE_PLUS_SHARP = 1;
-    private static final int DEF = 1;
+    private static int COST = 666;
+    private static int UPGRADE_COST = 2;
+    private static int SHARP = 1;
+    private static int UPGRADE_PLUS_SHARP = 1;
+    private static int DEF = 1;
 
     // /STAT DECLARATION/
 
     public i79UtterMastery() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        if (!this.upgraded) {
+            MushrooghtMod.loadJokeCardImage(this, "i79UtterMasteryNoUpg.png");
+        }
+        if (this.upgraded) {
+            MushrooghtMod.loadJokeCardImage(this, "i79UtterMasteryUpg.png");
+        }
+
         magicNumber = baseMagicNumber = SHARP;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DEF;
 
-        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 
@@ -61,6 +67,7 @@ public class i79UtterMastery extends AbstractDynamicCard {
             upgradeBaseCost(UPGRADE_COST);
             this.initializeDescription();
             rawDescription = UPGRADE_DESCRIPTION;
+
         }
     }
 

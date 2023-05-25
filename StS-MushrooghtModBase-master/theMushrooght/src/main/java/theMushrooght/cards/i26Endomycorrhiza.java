@@ -7,35 +7,36 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i26Endomycorrhiza extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i26Endomycorrhiza.class.getSimpleName());
-    public static final String IMG = makeCardPath("SkillUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i26Endomycorrhiza.class.getSimpleName());
+    public static String IMG = makeCardPath("i27Ectomycorrhiza.png");
 
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int ENERGY = 2;
-    private static final int UPGRADE_PLUS_ENERGY = 1;
+    private static int COST = 1;
+    private static int ENERGY = 2;
+    private static int UPGRADE_PLUS_ENERGY = 1;
 
     // /STAT DECLARATION/
 
     public i26Endomycorrhiza() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i27Ectomycorrhiza.png");
+        
         magicNumber = baseMagicNumber = ENERGY;
         this.exhaust = true;
         this.cardsToPreview = new i81BizarreParasite();
-        MushrooghtMod.loadJokeCardImage(this, ".png");
     }
 
     // Actions the card should do.

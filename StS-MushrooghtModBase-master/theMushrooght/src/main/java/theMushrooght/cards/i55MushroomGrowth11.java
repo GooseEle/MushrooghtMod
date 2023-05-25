@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.BlockReturnPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
@@ -19,26 +19,27 @@ public class i55MushroomGrowth11 extends AbstractGrowthCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i55MushroomGrowth11.class.getSimpleName());
-    public static final String IMG = makeCardPath("AttackUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i55MushroomGrowth11.class.getSimpleName());
+    public static String IMG = makeCardPath("AttackUncommon.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.ENEMY;
+    private static CardType TYPE = CardType.ATTACK;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 1;
-    private static final int MAGIC = 1;
-    private static final int UPGRADE_PLUS_MAGIC = 1;
+    private static int COST = 1;
+    private static int DAMAGE = 1;
+    private static int MAGIC = 1;
+    private static int UPGRADE_PLUS_MAGIC = 1;
 
 
     public i55MushroomGrowth11() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
         this.exhaust = true;
-        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

@@ -11,31 +11,32 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.SadisticPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i1SporePower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i77MushroomGrowth19 extends AbstractGrowthCard {
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i77MushroomGrowth19.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PowerRare.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i77MushroomGrowth19.class.getSimpleName());
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String IMG = makeCardPath("PowerRare.png");
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ALL;
-    private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
-    private static final int COST = 1;
-    private static final int SADIST = 3;
-    private static final int UPGRADE_PLUS_SADIST = 2;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
+    private static CardRarity RARITY = CardRarity.RARE;
+    private static CardTarget TARGET = CardTarget.ALL;
+    private static CardType TYPE = CardType.POWER;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static int COST = 1;
+    private static int SADIST = 3;
+    private static int UPGRADE_PLUS_SADIST = 2;
 
     public i77MushroomGrowth19() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         magicNumber = baseMagicNumber = SADIST;
-        MushrooghtMod.loadJokeCardImage(this, "i77MushroomGrowth19.png");
 
     }
 

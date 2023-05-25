@@ -11,32 +11,33 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i60Allelopathy extends AbstractDynamicCard {
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i60Allelopathy.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("AttackUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i60Allelopathy.class.getSimpleName());
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String IMG = makeCardPath("i60Allelopathy.png");
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.ENEMY;
+    private static CardType TYPE = CardType.ATTACK;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 11;
-    private static final int UPGRADE_PLUS_DMG = 6;
+    private static int COST = 1;
+    private static int DAMAGE = 11;
+    private static int UPGRADE_PLUS_DMG = 6;
 
     public i60Allelopathy() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i60Allelopathy.png");
+        
         baseDamage = DAMAGE;
-        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

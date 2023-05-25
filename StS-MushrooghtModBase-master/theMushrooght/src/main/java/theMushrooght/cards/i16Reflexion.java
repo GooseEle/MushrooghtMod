@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i6UnsafeBlockAction;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i3UnsafeBlockPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -16,27 +16,28 @@ public class i16Reflexion extends AbstractDynamicCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i16Reflexion.class.getSimpleName());
-    public static final String IMG = makeCardPath("i16Reflexion.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i16Reflexion.class.getSimpleName());
+    public static String IMG = makeCardPath("i16Reflexion.png");
 
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.COMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int BAD_BLOCK = 6;
-    private static final int UPGRADE_PLUS_BAD_BLOCK = 4;
-    private static final int CARD = 1;
-    private static final int UPGRADE_PLUS_CARD = 1;
+    private static int COST = 1;
+    private static int BAD_BLOCK = 6;
+    private static int UPGRADE_PLUS_BAD_BLOCK = 4;
+    private static int CARD = 1;
+    private static int UPGRADE_PLUS_CARD = 1;
 
 
     public i16Reflexion() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         magicNumber = baseMagicNumber = BAD_BLOCK;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = CARD;
-        MushrooghtMod.loadJokeCardImage(this, "i16Reflexion.png");
     }
 
     @Override
