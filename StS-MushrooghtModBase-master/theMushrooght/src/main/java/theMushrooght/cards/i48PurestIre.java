@@ -12,44 +12,44 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.powers.i6MyceliumPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i48PurestIre extends AbstractDynamicCard {
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i48PurestIre.class.getSimpleName());
-    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static String IMG = makeCardPath("i48PurestIre.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i48PurestIre.class.getSimpleName());
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String IMG = makeCardPath("AttackCommon.png");
 
-    public static String NAME = cardStrings.NAME;
-    public static String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static CardRarity RARITY = CardRarity.COMMON;
-    private static CardTarget TARGET = CardTarget.ENEMY;
-    private static CardType TYPE = CardType.ATTACK;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 0;
-    private static int DAMAGE = 1;
+    private static final int COST = 0;
+    private static final int DAMAGE = 1;
+    private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int MAGIC = 3;
+    private static final int UPGRADE_PLUS_MAGIC = 2;
 
 
 
     public i48PurestIre() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i48PurestIre.png");
-        
         baseDamage = DAMAGE;
+        baseMagicNumber = this.magicNumber = MAGIC;
         this.exhaust = true;
+        MushrooghtMod.loadJokeCardImage(this, ".png");
+
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (upgraded) {
-            for (int i = 0; i < 2; i++) {
-                addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
-            }
-        } else {
+        for (int i = 0; i < this.magicNumber; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
         }
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new i6MyceliumPower(p, p, 1), 1));
@@ -62,8 +62,9 @@ public class i48PurestIre extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.initializeDescription();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            initializeDescription();
         }
     }
 }

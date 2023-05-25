@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ReboundPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
@@ -18,31 +18,30 @@ public class i51WellLaidStrike extends AbstractDynamicCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i51WellLaidStrike.class.getSimpleName());
-    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static String IMG = makeCardPath("i51WellLaidStrike.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i51WellLaidStrike.class.getSimpleName());
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String IMG = makeCardPath("i51WellLaidStrike.png");
 
 
 
-    public static String NAME = cardStrings.NAME;
-    public static String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
 
-    private static CardRarity RARITY = CardRarity.COMMON;
-    private static CardTarget TARGET = CardTarget.ENEMY;
-    private static CardType TYPE = CardType.ATTACK;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 2;
-    private static int DAMAGE = 15;
-    private static int UPGRADE_PLUS_DMG = 5;
+    private static final int COST = 2;
+    private static final int DAMAGE = 15;
+    private static final int UPGRADE_PLUS_DMG = 5;
 
 
     public i51WellLaidStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i51WellLaidStrike.png");
-        
         baseDamage = DAMAGE;
+        MushrooghtMod.loadJokeCardImage(this, "i51WellLaidStrike.png");
 
     }
 

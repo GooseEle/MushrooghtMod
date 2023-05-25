@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.powers.i6MyceliumPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -15,20 +15,20 @@ public class i5KeepInLine extends AbstractDynamicCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i5KeepInLine.class.getSimpleName());
-    public static String IMG = makeCardPath("i5KeepInLine.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i5KeepInLine.class.getSimpleName());
+    public static final String IMG = makeCardPath("i5KeepInLine.png");
 
 
 
-    private static CardRarity RARITY = CardRarity.COMMON;
-    private static CardTarget TARGET = CardTarget.SELF;
-    private static CardType TYPE = CardType.SKILL;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 0;
-    private static int BLOCK = 3;
-    private static int MYCELIUM = 1;
-    private static int UPGRADE_PLUS_MYCELIUM = 2;
+    private static final int COST = 0;
+    private static final int BLOCK = 3;
+    private static final int MYCELIUM = 1;
+    private static final int UPGRADE_PLUS_MYCELIUM = 2;
 
 
 
@@ -36,12 +36,10 @@ public class i5KeepInLine extends AbstractDynamicCard {
 
     public i5KeepInLine() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i5KeepInLine.png");
-        
         baseBlock = BLOCK;
         magicNumber = baseMagicNumber = MYCELIUM;
         this.exhaust = true;
-        
+        MushrooghtMod.loadJokeCardImage(this, "i5KeepInLine.png");
     }
 
 

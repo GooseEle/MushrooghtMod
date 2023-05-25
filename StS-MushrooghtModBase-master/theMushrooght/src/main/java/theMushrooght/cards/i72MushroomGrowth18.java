@@ -11,32 +11,31 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.NoxiousFumesPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.powers.i1SporePower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i72MushroomGrowth18 extends AbstractGrowthCard {
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i72MushroomGrowth18.class.getSimpleName());
-    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static String IMG = makeCardPath("PowerUncommon.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i72MushroomGrowth18.class.getSimpleName());
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String IMG = makeCardPath("PowerUncommon.png");
 
-    public static String NAME = cardStrings.NAME;
-    public static String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static CardRarity RARITY = CardRarity.UNCOMMON;
-    private static CardTarget TARGET = CardTarget.ALL;
-    private static CardType TYPE = CardType.POWER;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
-    private static int COST = 1;
-    private static int POISON = 1;
-    private static int UPGRADE_PLUS_POISON = 1;
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.ALL;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static final int COST = 1;
+    private static final int POISON = 1;
+    private static final int UPGRADE_PLUS_POISON = 1;
 
     public i72MushroomGrowth18() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
         magicNumber = baseMagicNumber = POISON;
+        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

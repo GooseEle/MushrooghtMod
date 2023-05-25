@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.powers.i12MonDexterityPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -14,25 +14,24 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i70Protocooperation extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i70Protocooperation.class.getSimpleName());
-    public static String IMG = makeCardPath("i70Protocooperation.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i70Protocooperation.class.getSimpleName());
+    public static final String IMG = makeCardPath("PowerUncommon.png");
 
 
-    private static CardRarity RARITY = CardRarity.UNCOMMON;
-    private static CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static CardType TYPE = CardType.POWER;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
-    private static int COST = 1;
-    private static int COOPERATION = 2;
-    private static int UPGRADE_PLUS_COOPERATION = 1;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static final int COST = 1;
+    private static final int COOPERATION = 2;
+    private static final int UPGRADE_PLUS_COOPERATION = 1;
 
     // /STAT DECLARATION/
 
     public i70Protocooperation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
         magicNumber = baseMagicNumber = COOPERATION;
+        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

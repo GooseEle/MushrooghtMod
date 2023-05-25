@@ -18,15 +18,15 @@ public class i83MushroomGrowth20 extends AbstractGrowthCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i83MushroomGrowth20.class.getSimpleName());
-    public static String IMG = makeCardPath("i83MushroomGrowth20.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i83MushroomGrowth20.class.getSimpleName());
+    public static final String IMG = makeCardPath("i83MushroomGrowth20.png");
 
-    private static CardRarity RARITY = CardRarity.CURSE;
-    private static CardTarget TARGET = CardTarget.NONE;
-    private static CardType TYPE = CardType.CURSE;
+    private static final CardRarity RARITY = CardRarity.CURSE;
+    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardType TYPE = CardType.CURSE;
 
-    public static CardColor COLOR = AbstractCard.CardColor.CURSE;
-    private static int COST = -2;
+    public static final CardColor COLOR = AbstractCard.CardColor.CURSE;
+    private static final int COST = -2;
 
 
 
@@ -34,10 +34,9 @@ public class i83MushroomGrowth20 extends AbstractGrowthCard {
 
     public i83MushroomGrowth20() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i83MushroomGrowth20.png");
-        
         this.selfRetain = true;
         this.cardsToPreview = new Parasite();
+        MushrooghtMod.loadJokeCardImage(this, "i83MushroomGrowth20.png");
     }
 
     public void triggerOnExhaust() {

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
@@ -17,28 +17,27 @@ public class i57MushroomGrowth13 extends AbstractGrowthCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i57MushroomGrowth13.class.getSimpleName());
-    public static String IMG = makeCardPath("AttackUncommon.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i57MushroomGrowth13.class.getSimpleName());
+    public static final String IMG = makeCardPath("AttackUncommon.png");
 
-    private static CardRarity RARITY = CardRarity.UNCOMMON;
-    private static CardTarget TARGET = CardTarget.ENEMY;
-    private static CardType TYPE = CardType.ATTACK;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 1;
-    private static int DAMAGE = 2;
-    private static int TIME = 4;
-    private static int UPGRADE_PLUS_TIME = 1;
+    private static final int COST = 1;
+    private static final int DAMAGE = 2;
+    private static final int TIME = 4;
+    private static final int UPGRADE_PLUS_TIME = 1;
 
 
 
     public i57MushroomGrowth13() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
         baseDamage = DAMAGE;
         this.exhaust = true;
         magicNumber = baseMagicNumber = TIME;
+        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

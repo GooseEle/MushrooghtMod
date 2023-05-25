@@ -15,18 +15,18 @@ public class i82Mycoheterotrophy extends AbstractDynamicCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i82Mycoheterotrophy.class.getSimpleName());
-    public static String IMG = makeCardPath("SkillCurse.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i82Mycoheterotrophy.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillCurse.png");
 
 
 
-    private static CardRarity RARITY = CardRarity.CURSE;
-    private static CardTarget TARGET = CardTarget.NONE;
-    private static CardType TYPE = CardType.CURSE;
+    private static final CardRarity RARITY = CardRarity.CURSE;
+    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardType TYPE = CardType.CURSE;
 
-    public static CardColor COLOR = AbstractCard.CardColor.CURSE;
+    public static final CardColor COLOR = AbstractCard.CardColor.CURSE;
 
-    private static int COST = -2;
+    private static final int COST = -2;
 
 
 
@@ -34,8 +34,7 @@ public class i82Mycoheterotrophy extends AbstractDynamicCard {
 
     public i82Mycoheterotrophy() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
+        MushrooghtMod.loadJokeCardImage(this, ".png");
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

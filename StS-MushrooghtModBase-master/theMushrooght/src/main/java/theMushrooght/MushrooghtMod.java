@@ -22,7 +22,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theMushrooght.cards.AbstractDynamicCard;
 import theMushrooght.cards.AbstractMushrooghtCard;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.potions.PlaceholderPotion;
 import theMushrooght.relics.*;
 import theMushrooght.util.IDCheckDontTouchPls;
@@ -122,34 +122,31 @@ public class MushrooghtMod implements
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "theMushrooghtResources/images/charSelect/DefaultCharacterButton.png";
     private static final String THE_DEFAULT_PORTRAIT = "theMushrooghtResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "theMushrooghtResources/images/char/theMushrooght/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "theMushrooghtResources/images/char/theMushrooght/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "theMushrooghtResources/images/char/theMushrooght/corpse.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "theMushrooghtResources/images/char/defaultCharacter/shoulder.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "theMushrooghtResources/images/char/defaultCharacter/shoulder2.png";
+    public static final String THE_DEFAULT_CORPSE = "theMushrooghtResources/images/char/defaultCharacter/corpse.png";
 
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "theMushrooghtResources/images/Badge.png";
 
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "theMushrooghtResources/images/char/theMushrooght/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "theMushrooghtResources/images/char/theMushrooght/skeleton.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "theMushrooghtResources/images/char/defaultCharacter/skeleton.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "theMushrooghtResources/images/char/defaultCharacter/skeleton.json";
 
     // =============== MAKE IMAGE PATHS =================
 
     public static String makeCardPath(String resourcePath) {
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
-    public static String makeCardPathRustrike(String resourcePath1, String resourcePath2) {
-        if (Settings.language == Settings.GameLanguage.RUS) {
-            return getModID() + "Resources/images/cards/" + resourcePath1;}
-        else {
-            return getModID() + "Resources/images/cards/" + resourcePath2;}
-    }
+
     public static String makeRelicPath(String resourcePath) {
         return getModID() + "Resources/images/relics/" + resourcePath;
     }
+
     public static String makeRelicOutlinePath(String resourcePath) {
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
+
     public static String makeOrbPath(String resourcePath) {
         return getModID() + "Resources/images/orbs/" + resourcePath;
     }
@@ -203,9 +200,9 @@ public class MushrooghtMod implements
 
         logger.info("Done subscribing");
 
-        logger.info("Creating the color " + TheMushrooght.Enums.COLOR_MUSHROOM.toString());
+        logger.info("Creating the color " + TheDefault.Enums.COLOR_MUSHROOM.toString());
 
-        BaseMod.addColor(TheMushrooght.Enums.COLOR_MUSHROOM, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH,
+        BaseMod.addColor(TheDefault.Enums.COLOR_MUSHROOM, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH,
                 MUSHROOGHT_MUSH, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH, MUSHROOGHT_MUSH,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
@@ -287,13 +284,13 @@ public class MushrooghtMod implements
 
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheMushrooght.Enums.THE_MUSHROOGHT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_MUSHROOGHT.toString());
 
-        BaseMod.addCharacter(new TheMushrooght("the Mushrooght", TheMushrooght.Enums.THE_MUSHROOGHT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheMushrooght.Enums.THE_MUSHROOGHT);
+        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_MUSHROOGHT),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_MUSHROOGHT);
 
         receiveEditPotions();
-        logger.info("Added " + TheMushrooght.Enums.THE_MUSHROOGHT.toString());
+        logger.info("Added " + TheDefault.Enums.THE_MUSHROOGHT.toString());
     }
 
     // =============== /LOAD THE CHARACTER/ =================
@@ -365,7 +362,7 @@ public class MushrooghtMod implements
         // Class Specific Potion. If you want your potion to not be class-specific,
         // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheMushrooght.Enums.THE_MUSHROOGHT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_MUSHROOGHT);
 
         logger.info("Done editing potions");
     }
@@ -387,11 +384,11 @@ public class MushrooghtMod implements
         // in order to automatically differentiate which pool to add the relic too.
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new i1OvergrownMushroomRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
-        BaseMod.addRelicToCustomPool(new i2FightsForDummiesRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
-        BaseMod.addRelicToCustomPool(new i3FertileCorpseRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new i1OvergrownMushroomRelic(), TheDefault.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new i2FightsForDummiesRelic(), TheDefault.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new i3FertileCorpseRelic(), TheDefault.Enums.COLOR_MUSHROOM);
 
 
 
@@ -399,7 +396,7 @@ public class MushrooghtMod implements
 
 
 
-        BaseMod.addRelicToCustomPool(new i11GigaparasiteRelic(), TheMushrooght.Enums.COLOR_MUSHROOM);
+        BaseMod.addRelicToCustomPool(new i11GigaparasiteRelic(), TheDefault.Enums.COLOR_MUSHROOM);
 
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);

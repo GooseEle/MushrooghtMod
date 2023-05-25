@@ -9,37 +9,34 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i34MushroomGrowth7 extends AbstractGrowthCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i34MushroomGrowth7.class.getSimpleName());
-    public static String IMG = makeCardPath("SkillRare.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i34MushroomGrowth7.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillRare.png");
 
-    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
-    private static CardRarity RARITY = CardRarity.RARE;
-    private static CardTarget TARGET = CardTarget.SELF;
-    private static CardType TYPE = CardType.SKILL;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 1;
+    private static final int COST = 1;
 
-    private static int CARD = 2;
-    private static int UPGRADE_PLUS_CARD = 2;
+    private static final int CARD = 2;
+    private static final int UPGRADE_PLUS_CARD = 2;
 
     // /STAT DECLARATION/
 
     public i34MushroomGrowth7() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
         this.exhaust = true;
         magicNumber = baseMagicNumber = CARD;
 

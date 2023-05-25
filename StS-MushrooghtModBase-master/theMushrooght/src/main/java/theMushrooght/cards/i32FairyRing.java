@@ -6,32 +6,29 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
-import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i32FairyRing extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i32FairyRing.class.getSimpleName());
-    public static String IMG = makeCardPath("i32FairyRing.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i32FairyRing.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillRare.png");
 
-    private static CardRarity RARITY = CardRarity.RARE;
-    private static CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static CardType TYPE = CardType.SKILL;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 2;
-    private static int UPGRADE_COST = 1;
-    private static int POISON = 3;
+    private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
+    private static final int POISON = 3;
 
     // /STAT DECLARATION/
 
     public i32FairyRing() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i32FairyRing.png");
-        
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = POISON;
         this.exhaust = true;
     }

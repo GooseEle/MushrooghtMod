@@ -6,33 +6,30 @@ import com.megacrit.cardcrawl.actions.defect.ShuffleAllAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i36Stroma extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i36Stroma.class.getSimpleName());
-    public static String IMG = makeCardPath("i36Stroma.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i36Stroma.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillRare.png");
 
-    private static CardRarity RARITY = CardRarity.RARE;
-    private static CardTarget TARGET = CardTarget.SELF;
-    private static CardType TYPE = CardType.SKILL;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 1;
-    private static int UPGRADE_COST = 0;
-    private static int DRAW = 5;
-    private static int UPGRADE_PLUS_DRAW = 1;
+    private static final int COST = 1;
+    private static final int UPGRADE_COST = 0;
+    private static final int DRAW = 5;
+    private static final int UPGRADE_PLUS_DRAW = 1;
 
     // /STAT DECLARATION/
 
     public i36Stroma() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i36Stroma.png");
-        
         magicNumber = baseMagicNumber = DRAW;
 
     }

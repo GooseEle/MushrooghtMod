@@ -18,20 +18,19 @@ public class i80Bogue extends AbstractDynamicCard {
 
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i80Bogue.class.getSimpleName());
-    public static String IMG = makeCardPath("i80Bogue.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i80Bogue.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillCurse.png");
 
-    private static CardRarity RARITY = CardRarity.CURSE;
-    private static CardTarget TARGET = CardTarget.NONE;
-    private static CardType TYPE = CardType.CURSE;
+    private static final CardRarity RARITY = CardRarity.CURSE;
+    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardType TYPE = CardType.CURSE;
 
-    public static CardColor COLOR = AbstractCard.CardColor.CURSE;
-    private static int COST = -2;
+    public static final CardColor COLOR = AbstractCard.CardColor.CURSE;
+    private static final int COST = -2;
 
     public i80Bogue() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i80Bogue.png");
-        
+        MushrooghtMod.loadJokeCardImage(this, ".png");
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {}

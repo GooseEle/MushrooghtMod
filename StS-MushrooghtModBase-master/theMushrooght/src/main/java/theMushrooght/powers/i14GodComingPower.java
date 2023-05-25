@@ -39,7 +39,6 @@ public class i14GodComingPower extends AbstractPower {
         updateDescription();
     }
     public void atStartOfTurn() {
-        flashWithoutSound();
         addToBot(new ChangeStanceAction("Divinity"));
         addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }

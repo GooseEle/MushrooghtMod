@@ -9,35 +9,32 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i31MonotropoidMycorrhiza extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i31MonotropoidMycorrhiza.class.getSimpleName());
-    public static String IMG = makeCardPath("i31MonotropoidMycorrhiza.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i31MonotropoidMycorrhiza.class.getSimpleName());
+    public static final String IMG = makeCardPath("SkillRare.png");
 
-    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
-    private static CardRarity RARITY = CardRarity.RARE;
-    private static CardTarget TARGET = CardTarget.NONE;
-    private static CardType TYPE = CardType.SKILL;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
 
-    private static int COST = -2;
+    private static final int COST = -2;
 
 
     // /STAT DECLARATION/
 
     public i31MonotropoidMycorrhiza() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i31MonotropoidMycorrhiza.png");
-        
         this.cardsToPreview = new i26Endomycorrhiza();
         this.cardsToPreview = new i27Ectomycorrhiza();
     }

@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 import theMushrooght.powers.i16LunacyEvolvePower;
 import theMushrooght.powers.i2WeaknessSporePower;
 
@@ -14,25 +14,24 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i78LunacyEvolve extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i78LunacyEvolve.class.getSimpleName());
-    public static String IMG = makeCardPath("i78LunacyEvolve.png");
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i78LunacyEvolve.class.getSimpleName());
+    public static final String IMG = makeCardPath("PowerRare.png");
 
 
-    private static CardRarity RARITY = CardRarity.RARE;
-    private static CardTarget TARGET = CardTarget.ALL;
-    private static CardType TYPE = CardType.POWER;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
-    private static int COST = 1;
-    private static int MYCO = 3;
-    private static int UPGRADE_PLUS_MYCO = 2;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.ALL;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static final int COST = 1;
+    private static final int MYCO = 3;
+    private static final int UPGRADE_PLUS_MYCO = 2;
 
     // /STAT DECLARATION/
 
     public i78LunacyEvolve() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "i78LunacyEvolve.png");
-        
         magicNumber = baseMagicNumber = MYCO;
+        MushrooghtMod.loadJokeCardImage(this, ".png");
 
     }
 

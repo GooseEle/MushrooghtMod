@@ -5,40 +5,35 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i3PowderyMildewGashAction;
-import theMushrooght.characters.TheMushrooght;
+import theMushrooght.characters.TheDefault;
 
-import static theMushrooght.MushrooghtMod.loadJokeCardImage;
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i42PowderyMildew extends AbstractDynamicCard {
 
 
-    public static String ID = theMushrooght.MushrooghtMod.makeID(i42PowderyMildew.class.getSimpleName());
-
-    public static String IMG = makeCardPath("i42PowderyMildew.png");
-
+    public static final String ID = theMushrooght.MushrooghtMod.makeID(i42PowderyMildew.class.getSimpleName());
+    public static final String IMG = makeCardPath("AttackCommon.png");
 
 
 
-    private static CardRarity RARITY = CardRarity.COMMON;
-    private static CardTarget TARGET = CardTarget.ENEMY;
-    private static CardType TYPE = CardType.ATTACK;
-    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static int COST = 0;
-    private static int DAMAGE = 1;
-    private static int UPGRADE_PLUS_DMG = 1;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+
+    private static final int COST = 0;
+    private static final int DAMAGE = 1;
+    private static final int UPGRADE_PLUS_DMG = 1;
 
 
     public i42PowderyMildew() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        MushrooghtMod.loadJokeCardImage(this, "");
-        
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = 1;
-        loadJokeCardImage(this, "i42PowderyMildew.png");
+
     }
 
 

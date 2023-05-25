@@ -116,7 +116,10 @@
   },
   "theMushrooght:i28Velum": {
     "NAME": "Velum",
-    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust."
+    "DESCRIPTION": "Exhaust all non-Skill cards in your hand. NL Gain [E] for each card Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+      ]
   },
   "theMushrooght:i29Rhizoctonia": {
     "NAME": "Rhizoctonia",
@@ -146,7 +149,10 @@
   },
   "theMushrooght:i35Forcing": {
     "NAME": "Forcing",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust."
+    "DESCRIPTION": "Unplayable. NL When you draw this card, put a card from your exhaust pile into your hand and Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
 },
   "theMushrooght:i35Stroma": {
     "NAME": "Stroma",
@@ -162,11 +168,17 @@
   },
   "theMushrooght:i39Adapting": {
     "NAME": "Adapting",
-    "DESCRIPTION": "Unplayable. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand."
+    "DESCRIPTION": "Unplayable. NL When you draw this card, choose a 1 card from your draw pile and place it into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
   },
   "theMushrooght:i40Calmness": {
     "NAME": "Calmness",
-    "DESCRIPTION": "Unplayable. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn"
+    "DESCRIPTION": "Unplayable. NL Retain. NL At the end of your turn, Block is not removed at the start of your next turn",
+    "EXTENDED_DESCRIPTION": [
+      "DONT DO THIS YOU LITTLE MUSH LOVER"
+    ]
   },
   "theMushrooght:i41Haustoria": {
     "NAME": "Haustoria",
@@ -199,8 +211,7 @@
   },
   "theMushrooght:i48PurestIre": {
     "NAME": "Purest Ire",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! themushrooght:Mycelium. NL Add a copy of this card to your discard and draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL Gain !M! themushrooght:Mycelium. NL Add a copy of this card to your discard and draw pile. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! themushrooght:Mycelium. NL Add a copy of this card to your discard and draw pile. NL Exhaust."
   },
   "theMushrooght:i49LearnRussianStrike": {
     "NAME": "Learn Russian Strike",
@@ -332,8 +343,8 @@
   },
   "theMushrooght:i79UtterMastery": {
     "NAME": "Utter Mastery",
-    "DESCRIPTION": "Whenever you play a card, gain !theMushrooght:SecondMagic! Block and deal !M! damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. Whenever you play a card, gain !theMushrooght:SecondMagic! Block and deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Whenever you play a card, gain 1 Block and deal 1 damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. Whenever you play a card, gain 1 Block and deal 2 damage to ALL enemies."
   },
   "theMushrooght:i80Bogue": {
     "NAME": "Bogue",
@@ -341,7 +352,7 @@
   },
   "theMushrooght:i81BizarreParasite": {
     "NAME": "Bizarre Parasite",
-    "DESCRIPTION": "Unplayable. NL If this card is Exhausted, heal 1 HP at the end of combat and draw 1 card."
+    "DESCRIPTION": "Unplayable. NL If this card is Exhausted, heal 1 HP and draw 1 card."
   },
   "theMushrooght:i82Mycoheterotrophy": {
     "NAME": "Myco-heterotrophy",
