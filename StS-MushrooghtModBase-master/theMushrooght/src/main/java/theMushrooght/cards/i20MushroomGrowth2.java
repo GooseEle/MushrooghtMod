@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i6UnsafeBlockAction;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i3UnsafeBlockPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -19,24 +19,25 @@ public class i20MushroomGrowth2 extends AbstractGrowthCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i20MushroomGrowth2.class.getSimpleName());
-    public static final String IMG = makeCardPath("SkillUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i20MushroomGrowth2.class.getSimpleName());
+    public static String IMG = makeCardPath("SkillUncommon.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 2;
-    private static final int BAD_BLOCK = 6;
-    private static final int UPGRADE_PLUS_BAD_BLOCK = 5;
+    private static int COST = 2;
+    private static int BAD_BLOCK = 6;
+    private static int UPGRADE_PLUS_BAD_BLOCK = 5;
 
 
     public i20MushroomGrowth2() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         magicNumber = baseMagicNumber = BAD_BLOCK;
         this.exhaust = true;
-        MushrooghtMod.loadJokeCardImage(this, ".png");
     }
 
 

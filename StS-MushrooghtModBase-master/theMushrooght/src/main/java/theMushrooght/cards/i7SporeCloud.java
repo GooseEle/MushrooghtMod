@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i1SporePower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -13,24 +13,26 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i7SporeCloud extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i7SporeCloud.class.getSimpleName());
-    public static final String IMG = makeCardPath("i7SporeCloud.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i7SporeCloud.class.getSimpleName());
+    public static String IMG = makeCardPath("i7SporeCloud.png");
 
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
-    private static final int COST = 1;
-    private static final int UPGRADE_COST = 0;
-    private static final int SPORES = 2;
-    private static final int UPGRADE_PLUS_SPORES = 2;
+    private static CardRarity RARITY = CardRarity.COMMON;
+    private static CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static int COST = 1;
+    private static int UPGRADE_COST = 0;
+    private static int SPORES = 2;
+    private static int UPGRADE_PLUS_SPORES = 2;
 
     // /STAT DECLARATION/
     public i7SporeCloud() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = SPORES;
         MushrooghtMod.loadJokeCardImage(this, "i7SporeCloud.png");
+        
+        magicNumber = baseMagicNumber = SPORES;
+        
     }
 
     // Actions the card should do.

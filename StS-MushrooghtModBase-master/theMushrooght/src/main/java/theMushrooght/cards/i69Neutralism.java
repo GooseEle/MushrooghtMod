@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i2WeaknessSporePower;
 import theMushrooght.powers.i6MyceliumPower;
 
@@ -18,23 +18,24 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i69Neutralism extends AbstractDynamicCard {
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i69Neutralism.class.getSimpleName());
-    public static final String IMG = makeCardPath("i69Neutralism.png");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i69Neutralism.class.getSimpleName());
+    public static String IMG = makeCardPath("i69Neutralism.png");
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ALL;
-    private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
-    private static final int COST = 2;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.ALL;
+    private static CardType TYPE = CardType.POWER;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static int COST = 2;
 
     public i69Neutralism() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         MushrooghtMod.loadJokeCardImage(this, "i69Neutralism.png");
+        
 
 
     }

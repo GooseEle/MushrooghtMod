@@ -10,32 +10,33 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i8MushroomGrowth15Action;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
 
 public class i67MushroomGrowth15 extends AbstractGrowthCard {
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i67MushroomGrowth15.class.getSimpleName());
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("AttackRare.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i67MushroomGrowth15.class.getSimpleName());
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static String IMG = makeCardPath("AttackRare.png");
 
-    public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static String NAME = cardStrings.NAME;
+    public static String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.RARE;
+    private static CardTarget TARGET = CardTarget.ENEMY;
+    private static CardType TYPE = CardType.ATTACK;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static int COST = 1;
+    private static int DAMAGE = 8;
+    private static int UPGRADE_PLUS_DMG = 3;
 
     public i67MushroomGrowth15() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         baseDamage = DAMAGE;
-        MushrooghtMod.loadJokeCardImage(this, ".png");
         this.exhaust = true;
     }
 

@@ -5,25 +5,28 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.MushrooghtMod;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i6MyceliumPower;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i38FenceOff extends AbstractDynamicCard {
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i38FenceOff.class.getSimpleName());
-    public static final String IMG = makeCardPath("SkillRare.png");
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.NONE;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
-    private static final int COST = -2;
-    private static final int MYCELIUM = 5;
-    private static final int UPGRADE_PLUS_MYCELIUM = 2;
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i38FenceOff.class.getSimpleName());
+    public static String IMG = makeCardPath("i38FenceOff.png");
+    private static CardRarity RARITY = CardRarity.RARE;
+    private static CardTarget TARGET = CardTarget.NONE;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
+    private static int COST = -2;
+    private static int MYCELIUM = 5;
+    private static int UPGRADE_PLUS_MYCELIUM = 2;
 
     public i38FenceOff() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i38FenceOff.png");
+        
         magicNumber = baseMagicNumber = MYCELIUM;
     }
 

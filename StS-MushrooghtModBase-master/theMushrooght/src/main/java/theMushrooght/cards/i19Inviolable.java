@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i6MyceliumPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -13,28 +13,29 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i19Inviolable extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i19Inviolable.class.getSimpleName());
-    public static final String IMG = makeCardPath("SkillUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i19Inviolable.class.getSimpleName());
+    public static String IMG = makeCardPath("i19Inviolable.png");
 
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 0;
+    private static int COST = 0;
 
-    private static final int MYCELIUM = 9;
-    private static final int UPGRADE_PLUS_MYCELIUM = 4;
+    private static int MYCELIUM = 9;
+    private static int UPGRADE_PLUS_MYCELIUM = 4;
 
     // /STAT DECLARATION/
 
     public i19Inviolable() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i19Inviolable.png");
+        
         this.exhaust = true;
         this.isInnate = true;
         magicNumber = baseMagicNumber = MYCELIUM;
-        MushrooghtMod.loadJokeCardImage(this, ".png");
     }
 
     // Actions the card should do.

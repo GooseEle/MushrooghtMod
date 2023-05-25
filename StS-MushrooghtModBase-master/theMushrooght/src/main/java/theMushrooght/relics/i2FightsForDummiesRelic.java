@@ -24,6 +24,7 @@ public class i2FightsForDummiesRelic extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
         this.pulse = false;
     }
+
     // Gain 1 energy on equip.
     public void atPreBattle() {
         flash();

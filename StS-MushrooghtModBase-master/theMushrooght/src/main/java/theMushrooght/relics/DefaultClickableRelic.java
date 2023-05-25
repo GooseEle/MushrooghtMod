@@ -47,7 +47,7 @@ public class DefaultClickableRelic extends CustomRelic implements ClickableRelic
             // If it has been used this turn, the player doesn't actually have the relic (i.e. it's on display in the shop room), or it's the enemy's turn
             return; // Don't do anything.
         }
-        
+
         if (AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) { // Only if you're in combat
             usedThisTurn = true; // Set relic as "Used this turn"
             flash(); // Flash
@@ -74,7 +74,7 @@ public class DefaultClickableRelic extends CustomRelic implements ClickableRelic
          *
          */
     }
-    
+
     @Override
     public void atPreBattle() {
         usedThisTurn = false; // Make sure usedThisTurn is set to false at the start of each combat.
@@ -86,13 +86,13 @@ public class DefaultClickableRelic extends CustomRelic implements ClickableRelic
         isPlayerTurn = true; // It's our turn!
         beginLongPulse(); // Pulse while the player can click on it.
     }
-    
+
     @Override
     public void onPlayerEndTurn() {
         isPlayerTurn = false; // Not our turn now.
         stopPulse();
     }
-    
+
 
     @Override
     public void onVictory() {

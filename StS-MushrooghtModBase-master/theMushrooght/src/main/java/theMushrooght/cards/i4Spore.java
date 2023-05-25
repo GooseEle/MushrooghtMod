@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i6MyceliumPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -16,26 +16,28 @@ import static theMushrooght.MushrooghtMod.makeCardPath;
 public class i4Spore extends AbstractDynamicCard {
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i4Spore.class.getSimpleName());
-    public static final String IMG = makeCardPath("i4Spore.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i4Spore.class.getSimpleName());
+    public static String IMG = makeCardPath("i4Spore.png");
 
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.BASIC;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 2;
-    private static final int MYCELIUM = 3;
-    private static final int UPGRADE_PLUS_MYCELIUM = 3;
+    private static int COST = 2;
+    private static int MYCELIUM = 3;
+    private static int UPGRADE_PLUS_MYCELIUM = 3;
 
     // /STAT DECLARATION/
 
     public i4Spore() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i4Spore.png");
+        
 
         magicNumber = baseMagicNumber = MYCELIUM;
-        MushrooghtMod.loadJokeCardImage(this, "i4Spore.png");
+        
     }
 
     // Actions the card should do.

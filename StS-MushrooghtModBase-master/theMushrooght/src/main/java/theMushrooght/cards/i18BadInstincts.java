@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i6UnsafeBlockAction;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i3UnsafeBlockPower;
 import theMushrooght.powers.i6MyceliumPower;
 
@@ -16,28 +16,29 @@ public class i18BadInstincts extends AbstractDynamicCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i18BadInstincts.class.getSimpleName());
-    public static final String IMG = makeCardPath("SkillUncommon.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i18BadInstincts.class.getSimpleName());
+    public static String IMG = makeCardPath("i18BadInstincts.png");
 
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.UNCOMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 0;
-    private static final int BAD_BLOCK = 10;
-    private static final int UPGRADE_PLUS_BAD_BLOCK = 3;
-    private static final int MYCELIUM = 3;
+    private static int COST = 0;
+    private static int BAD_BLOCK = 10;
+    private static int UPGRADE_PLUS_BAD_BLOCK = 3;
+    private static int MYCELIUM = 3;
 
 
     public i18BadInstincts() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "");
+        
         magicNumber = baseMagicNumber = BAD_BLOCK;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = MYCELIUM;
         this.isInnate = true;
         this.exhaust = true;
-        MushrooghtMod.loadJokeCardImage(this, "i18BadInstincts.png");
     }
 
 

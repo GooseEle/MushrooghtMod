@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMushrooght.MushrooghtMod;
 import theMushrooght.actions.i6UnsafeBlockAction;
-import theMushrooght.characters.TheDefault;
+import theMushrooght.characters.TheMushrooght;
 import theMushrooght.powers.i3UnsafeBlockPower;
 
 import static theMushrooght.MushrooghtMod.makeCardPath;
@@ -15,25 +15,27 @@ public class i10Consumedmind extends AbstractDynamicCard {
 
 
 
-    public static final String ID = theMushrooght.MushrooghtMod.makeID(i10Consumedmind.class.getSimpleName());
-    public static final String IMG = makeCardPath("i10Consumedmind.png");
+    public static String ID = theMushrooght.MushrooghtMod.makeID(i10Consumedmind.class.getSimpleName());
+    public static String IMG = makeCardPath("i10Consumedmind.png");
 
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_MUSHROOM;
+    private static CardRarity RARITY = CardRarity.COMMON;
+    private static CardTarget TARGET = CardTarget.SELF;
+    private static CardType TYPE = CardType.SKILL;
+    public static CardColor COLOR = TheMushrooght.Enums.COLOR_MUSHROOM;
 
-    private static final int COST = 1;
-    private static final int BAD_BLOCK = 12;
-    private static final int UPGRADE_PLUS_BAD_BLOCK = 4;
+    private static int COST = 1;
+    private static int BAD_BLOCK = 12;
+    private static int UPGRADE_PLUS_BAD_BLOCK = 4;
 
 
     public i10Consumedmind() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        MushrooghtMod.loadJokeCardImage(this, "i10Consumedmind.png");
+        
         magicNumber = baseMagicNumber = BAD_BLOCK;
         this.isEthereal = true;
-        MushrooghtMod.loadJokeCardImage(this, "i10Consumedmind.png");
+        
     }
 
 
